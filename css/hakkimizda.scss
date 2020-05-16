@@ -1,0 +1,154 @@
+
+$darkPurple: #0f011a;
+$purple: #2d0452;
+$red: #ff2a00;
+$yellow: #ffaf00;
+$blue: #00baff;
+$gray: #b2b2b2;
+
+.main-slider {
+  width: 100%;
+  height: 374px;
+  background-color: $gray;
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 130%;
+  background-position: left;
+
+  .slider-overlay {
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      .page-title {
+        font-family: 'NexaBold';
+        font-size: 4.8rem;
+        color: #fff;
+        margin-top: -70px;
+      }
+      .page-links {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5rem;
+          color: #fff;
+          height: 40px;
+          padding: 0 15px;
+          margin: 0 8px;
+          border-radius: 40px;
+          border: 2px solid #fff;
+          border-style: dashed;              
+          background-color: rgba(0,0,0,.4);
+        }
+      }
+    }
+  }
+
+}
+
+
+.container {
+  .content-box {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 150px;
+    margin-top: -140px;
+    background-color: #fff;
+    box-shadow: 0px 0px 60px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 80px;
+    .content-title {
+      font-size: 2.6rem;
+      font-family: 'AvenirBlack';
+      color: $purple;
+    }
+    .content-summary {
+      font-size: 1.6rem;
+      color: $purple;
+      opacity: 0.6;
+      margin-top: 5px;
+    }
+    .page-content {
+      width: 80%;
+      height: auto;
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.bottom-banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  margin-top: 90px;
+  background-image: url(../images/mutlumusteri.jpg);
+  background-size: cover;
+  background-size: 120%;
+  background-position: 50% 30%;
+  background-position: fixed;
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .banner-text {
+      font-size: 3.6rem;
+      color: #fff;
+      text-shadow: 0px 0px 15px rgba(0,0,0,1);
+      font-family: 'AvenirBlack';
+    }
+  }
+}
+
+
+.bank-details {
+  width: 100%;
+  height: auto;
+  .bank {
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $purple;
+    .bank-logo {
+      width: 300px;
+      height: 90px;
+      border-radius: 15px;
+      border: 2px solid $purple;
+      border-style: dashed;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+    .bank-numbers {
+      flex: 1;
+      margin-left: 20px;
+      p {
+        font-size: 1.5rem;
+        span {
+          font-family: 'AvenirBlack';
+        }
+      }
+    }
+  }
+}
