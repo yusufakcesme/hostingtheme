@@ -1317,3 +1317,330 @@ footer {
    width: 95%;
  }
 }
+
+@media only screen and (max-width: 860px) {
+  
+
+  footer {
+    width: 100%;
+    height: auto;
+    .footer-top {
+      width: 100%;
+      height: auto;
+      .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .social-icons {
+          display: flex;
+          align-items: center;
+          margin: 5px auto;
+          a {
+            font-size: 2.2rem;
+            color: #fff;
+            margin-right: 15px;
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+        .info-text {
+          display: flex;
+          margin: 5px auto;
+          align-items: center;
+          a {
+            margin-left: 25px;
+            &:first-child {
+              margin: 0;
+            }
+          }
+        }
+  
+      }
+    }
+    & > .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      .footer-box {
+        margin: 0 5px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        color: #fff;
+        flex: 1;
+        width: 100%;
+        
+        .footer-logo {
+          font-size: 4rem;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+        .footer-about-text {
+          font-size: 1.4rem;
+          font-family: 'AvenirLight';
+          line-height: 1.5;
+          text-align: center;
+        }
+  
+        &:first-child {margin-left: 0}
+        &:last-child {margin-right: 0}
+        
+      }
+      
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .footer-title {
+          font-size: 1.8rem;
+          font-family: 'AvenirBlack';
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            margin-bottom: 5px;
+            a {
+              font-size: 1.3rem;
+              color: #fff;
+              font-family: 'AvenirLight';
+            }
+          }
+        }
+        .footer-form {
+          height: auto;
+          input {
+            width: 280px;
+            height: 40px;
+            border: none;
+            background-color: rgba($color: #170229, $alpha: .9);
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 2px;
+            color: #fff;
+  
+            &::placeholder {
+              color: $gray;
+            }
+            &:first-child {
+              border-radius: 10px 10px 0 0;
+            }
+          }
+          textarea {
+            width: 280px;
+            height: 60px;
+            border: none;
+            background-color: rgba($color: #170229, $alpha: .9);
+            text-align: center;
+            font-size: 1.5rem;
+            color: #fff;
+            resize: none;
+            font-family: 'AvenirMedium';
+            padding-top: 10px;
+            margin-top: 1px;
+            &::placeholder {
+              color: $gray;
+            }
+          }
+          button {
+            margin-top: -4px;
+            width: 280px;
+            height: 30px;
+            border: none;
+            background-color: rgba($color: #000, $alpha: .9);
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 2px;
+            color: #fbfbfb;
+            border-radius: 0 0 10px 10px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  /* MAIN CAMPAIGN RESPONSIVE */
+.container {
+  .main-campaign {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .campaign-card {
+      flex: 1;
+      height: auto;
+      border-radius: 20px;
+      margin: 10px auto;
+      padding: 15px 5px !important;
+      &:nth-child(2) {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+
+
+
+.faq-box {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .faq-item {
+    margin-bottom: 5px;
+    .accordion {
+      border-radius: 5px;
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 5px 8px;
+      width: 100%;
+      height: auto;
+      border: none;
+      align-items: center;
+      text-align: left;
+      outline: none;
+      font-size: 1.5rem;
+      display: flex;
+      transition: 0.4s;
+      .fa-chevron-down {
+        margin-left: auto;
+      }
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+  
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      margin-top: 5px;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  }
+}
+
+
+
+
+/* SEARCH DOMAIN RESPONSIVE */
+.container {
+  .search-domain {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    margin-top: -60px;
+    background-color: #fff;
+    box-shadow: 0px 0px 60px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    h3 {
+      font-size: 1.8rem !important;
+      font-family: 'AvenirRoman';
+      font-weight: bolder;
+      font-style: italic;
+      color: $purple;
+      margin-bottom: 20px;
+    }
+    p {
+      color: $gray;
+      font-size: 1.4rem;
+      text-align: center !important;
+    }
+    .search-input {
+      width: 100%;
+      height: 60px;
+      background-color: #f8fafc;
+      margin-top: 30px;
+      border-radius: 60px;
+      display: flex;
+      position: relative;
+      font-family: 'AvenirMedium';
+      input {
+        background-color: #f8fafc;
+        border-radius: 70px;
+        border: none;
+        height: 60px;
+        z-index: 1;
+        width: calc(100% - 90px);
+        text-indent: 15px;
+        font-size: 1.6rem;
+        &::placeholder {
+          color: $gray;
+        }
+      }
+      button {
+        flex: 1;
+        background-color: $purple;
+        color: #fff;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        width: 120px;
+        height: 60px;
+        right: 0;
+        z-index: 0;
+        border-radius: 0 35px 35px 0;
+        cursor: pointer;
+        font-size: 1.6rem;
+      }
+    }
+
+    .domain-types {
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      .domain-type-item {
+        text-align: center;
+        margin: 10px;
+        h2 {
+          font-size: 3rem;
+          color: $purple;
+          font-weight: bolder;
+          font-family: 'AvenirRoman';
+        }
+        span {
+          font-size: 1.4rem;
+          color: $purple;
+          font-weight: 'AvenirLight';
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+}

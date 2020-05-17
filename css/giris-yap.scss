@@ -1,0 +1,208 @@
+
+$darkPurple: #0f011a;
+$purple: #2d0452;
+$red: #ff2a00;
+$yellow: #ffaf00;
+$blue: #00baff;
+$gray: #b2b2b2;
+
+.main-slider {
+  min-width: 100%;
+  height: 690px;
+  background-color: $gray;
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: 20% 50%;
+
+  .slider-overlay {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .login-box {
+        width: 460px;
+        height: 360px;
+
+        .sign-buttons {
+          display: flex;
+          align-items: center;
+          li {
+            flex: 1;
+            margin-left: 40px;
+            text-align: center;
+            height: 60px;
+            line-height: 59px;
+            background-color: #000;
+            font-family: 'AvenirBlack';
+            &:first-child {
+              margin-right: -40px;
+            }
+            a {
+              color: #fff;
+              font-size: 2.7rem;
+            }
+            &.active-link {
+              background-image: linear-gradient(to top, #dddddd, #e5e5e5, #eeeeee, #f6f6f6, #ffffff);
+             a {
+              color: $purple;
+             }
+            }
+          }
+        }
+
+        .login-form {
+          width: 100%;
+          height: 300px;
+          background-color: #fff;
+          box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+          border-radius: 20px 0 20px 0;
+          padding: 30px 40px;
+          input {
+            width: 100%;
+            height: 50px;
+            background-color: #e1dde7;
+            border: none;
+            text-indent: 15px;
+            color: #000;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            &::placeholder {
+              color: $gray;
+            }
+          }
+          .forget-pass {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & > a {
+              font-size: 1.6rem;
+              color: $purple;
+            }
+          /* The container */
+          .container {
+            display: inline-block;
+            position: relative;
+            padding-left: 35px;
+            cursor: pointer;
+            font-size: 1.6rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            padding-top: 4px;
+            margin-left: 0;
+          }
+
+          /* Hide the browser's default checkbox */
+          .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+
+          /* Create a custom checkbox */
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #fff;border: 2px solid $purple;
+          }
+
+          /* On mouse-over, add a grey background color */
+          .container:hover input ~ .checkmark {
+            background-color: #fff;
+          }
+
+          /* When the checkbox is checked, add a blue background */
+          .container input:checked ~ .checkmark {
+            border: 3px solid $purple;
+          }
+
+          /* Create the checkmark/indicator (hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+
+          /* Show the checkmark when checked */
+          .container input:checked ~ .checkmark:after {
+            display: block;
+          }
+
+          /* Style the checkmark/indicator */
+          .container .checkmark:after {
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid $purple;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+          }
+
+          button {
+            width: 100%;
+            height: 60px;
+            background-color: $purple;
+            color: #fff;
+            font-family: 'AvenirBlack';
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 2rem;
+          }
+
+        }
+
+      }
+    }
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1170px) {
+  .sign-buttons {
+    li {
+      height: 50px !important;
+      line-height: 49px !important;
+      a {
+        font-size: 2rem !important;
+      }
+    }
+  }
+
+
+  .forget-pass {
+    max-width: 100% !important;
+    margin-top: -10px;
+    & > a {
+    font-size: 1.4rem !important;
+    width: 100%;
+    margin-right: -60px;
+    }
+    label {
+      font-size: 1.4rem !important;
+    }
+}
+
+
+
+
+
+
+
+}
