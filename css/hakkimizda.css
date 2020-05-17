@@ -1,12 +1,9 @@
 .main-slider {
-  width: 100%;
+  min-width: 100%;
   height: 374px;
   background-color: #b2b2b2;
   background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 130%;
-  background-position: left;
 }
 
 .main-slider .slider-overlay .container {
@@ -100,6 +97,7 @@
   color: #2d0452;
   opacity: 0.6;
   margin-top: 5px;
+  text-align: center;
 }
 
 .container .content-box .page-content {
@@ -118,10 +116,7 @@
   overflow: hidden;
   margin-top: 90px;
   background-image: url(../images/mutlumusteri.jpg);
-  background-size: cover;
-  background-size: 120%;
   background-position: 50% 30%;
-  background-position: fixed;
 }
 
 .bottom-banner .container {
@@ -195,5 +190,98 @@
 
 .bank-details .bank .bank-numbers p span {
   font-family: 'AvenirBlack';
+}
+
+@media only screen and (max-width: 1170px) {
+  html {
+    font-size: 9px;
+  }
+  .page-links {
+    width: 90%;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin-top: 20px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .page-links::-webkit-scrollbar {
+    display: none;
+  }
+  .page-links a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .container .content-box {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 70px;
+    margin-top: -140px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 15px;
+  }
+  .container .content-box .content-title {
+    font-size: 2.6rem;
+    font-family: 'AvenirBlack';
+    color: #2d0452;
+  }
+  .container .content-box .content-summary {
+    font-size: 1.6rem;
+    color: #2d0452;
+    opacity: 0.6;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .container .content-box .page-content {
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .bank-details {
+    width: 100%;
+    height: auto;
+  }
+  .bank-details .bank {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0;
+  }
+  .bank-details .bank .bank-numbers {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 10px 0 0 0;
+    margin-left: 0px;
+  }
+  .bank-details .bank .bank-numbers p {
+    font-size: 1.5rem;
+  }
+  .bank-details .bank .bank-numbers p span {
+    font-family: 'AvenirBlack';
+  }
 }
 /*# sourceMappingURL=hakkimizda.css.map */
