@@ -1,0 +1,123 @@
+
+
+.main-slider {
+  .slider-overlay {
+    background-color: rgba(0,0,0,.4);
+    .container {
+      padding-top: 30px;
+      display: flex;
+    }
+  }
+}
+
+
+.panel-options {
+  flex: 2.2;
+  display: flex;
+  align-items: flex-start;
+  align-self: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+/*
+  .option-item {
+    width: 185px;
+    height: 185px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }*/
+
+  .flip-card {
+    width: 185px;
+    height: 185px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+    position: relative;
+    .notification {
+      position: absolute;
+      top: -5px;
+      right: 0px;
+      border: 2px solid #fff;
+      border-style: dashed;
+      background-color: rgba(0,0,0,.8);
+      width: 74px;
+      height: 30px;
+      text-align: center;
+      line-height: 28px;
+      border-radius: 30px;
+      font-size: 2rem;
+      font-family: 'AvenirBlack';
+      color: #fff;
+      z-index: 5;
+    }
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 30px !important;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 30px;
+  }
+  
+  .flip-card-front {
+    background-color: rgba(255,255,255,.2);
+    border-radius: 30px;
+    width: 185px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    p {
+      font-size: 2.4rem;
+      font-family: 'AvenirLight';
+      margin-top: 15px;
+    }
+  
+  }
+  
+  .flip-card-back {
+    background-color: rgba(255,255,255,.2);
+    border-radius: 30px;
+    width: 185px;
+    height: 185px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    position: relative;
+    a {
+      font-size: 1.6rem;
+      color: #fff;
+      border-bottom: 1px solid rgba(255,255,255,.2);
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+
+.panel-profile {
+  flex: 1;
+  border: 1px solid red;
+}
