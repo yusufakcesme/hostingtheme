@@ -259,3 +259,201 @@ $gray: #b2b2b2;
     }
   }
 }
+
+
+.bize-ulasin {
+  width: 100%;
+  height: 130px;
+  background-color: $purple;
+  background-image: url(../images/footer-bg.png);
+  background-position: 20% 50%;
+  margin-top: 80px;
+  .container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    & > p {
+      font-size: 2.6rem;
+      color: #fff;
+    }
+    .phone-number {
+      font-size: 4.4rem;
+      background-color: #fff;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      border-radius: 35px 10px 10px 35px;
+      padding-right: 10px;
+      span {
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        border: 4px solid $purple;
+        display: flex;
+        margin-right: 5px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.bottom-banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background-image: url(../images/mutlumusteri2.jpg);
+  background-position: 50% 30%;
+  background-size: cover;
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .banner-text {
+      font-size: 3.6rem;
+      color: #fff;
+      text-shadow: 0px 0px 15px rgba(0,0,0,1);
+      font-family: 'AvenirBlack';
+    }
+  }
+}
+
+
+.container {
+  .metinler {
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    .metin-item {
+      display: flex;
+      margin-bottom: 40px;
+      .metin-wrap {
+        flex: 1;
+        padding: 30px;
+        .img-cont {
+          position: relative;
+          height: 0;
+          padding-top: calc(9 / 16 * 100%);
+          border-radius: 15px;
+          overflow: hidden;
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+          }
+        }
+        .metin-text {
+          text-align: right;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100%;
+          h3 {
+            color: #453f3d;
+            font-size: 2.8rem;
+            font-family: 'AvenirBlack';
+            margin-bottom: 25px;
+          }
+          p {
+            color: #453f3d;
+            font-size: 1.8rem;
+          }
+        }
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+    
+  }
+}
+
+
+
+
+/* MAIN SLIDER */
+
+.main-slider {
+  width: 100%;
+  height: 450px;
+  background-color: $gray;
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  .slider-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    position: relative;
+    .container {
+      height: 100%;
+      .nextArrow {
+        position: absolute;
+        font-size: 5rem;
+        color: #fff;
+        transform: translateY(-28px);
+        right: 45%;
+        cursor: pointer;
+        top: auto;
+        bottom: 0 !important;
+        z-index: 55;
+      }
+      .prevArrow {
+        position: absolute;
+        font-size: 5rem;
+        color: #fff;
+        top: auto;
+        bottom: 0 !important;
+        transform: translateY(-28px);
+        left: 45%;
+        cursor: pointer;
+        z-index: 55;
+      }
+      h1 {
+        position: absolute;
+        top: 30px;
+        font-size: 3rem;
+        color: #fff;
+        font-family: 'AvenirBlack';
+      }
+      .slider {
+        width: 100%;
+        height: 100%;
+        .slider-item {
+          width: 100%;
+          height: 250px !important;
+          display: flex;
+          margin-top: 90px;
+          padding: 30px;
+
+          .slider-text {
+            flex: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 10%;
+            border-radius: 100px;
+            border: 5px solid white;
+            text-align: center;
+            background-color: rgba(255,255,255,.4);
+            q {
+              font-size: 2.4rem;
+            }
+            span {
+              font-family: 'AvenirBlack';
+              font-size: 2.4rem;
+              margin-top: 15px;
+            }
+          }
+        }
+      } 
+    }
+  }
+}
+
