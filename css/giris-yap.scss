@@ -6,6 +6,14 @@ $yellow: #ffaf00;
 $blue: #00baff;
 $gray: #b2b2b2;
 
+.kayit-ol-slider {
+  height: 370px !important;
+  .sign-buttons {
+    margin-top: 140px !important;
+    margin-left: -40px;
+  }
+}
+
 .main-slider {
   min-width: 100%;
   height: 690px;
@@ -15,6 +23,7 @@ $gray: #b2b2b2;
   background-position: 20% 50%;
 
   .slider-overlay {
+    background-color: rgba(0,0,0,.5);
     .container {
       display: flex;
       align-items: center;
@@ -71,86 +80,6 @@ $gray: #b2b2b2;
               color: $gray;
             }
           }
-          .forget-pass {
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            & > a {
-              font-size: 1.6rem;
-              color: $purple;
-            }
-          /* The container */
-          .container {
-            display: inline-block;
-            position: relative;
-            padding-left: 35px;
-            cursor: pointer;
-            font-size: 1.6rem;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            padding-top: 4px;
-            margin-left: 0;
-          }
-
-          /* Hide the browser's default checkbox */
-          .container input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            height: 0;
-            width: 0;
-          }
-
-          /* Create a custom checkbox */
-          .checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 25px;
-            width: 25px;
-            background-color: #fff;border: 2px solid $purple;
-          }
-
-          /* On mouse-over, add a grey background color */
-          .container:hover input ~ .checkmark {
-            background-color: #fff;
-          }
-
-          /* When the checkbox is checked, add a blue background */
-          .container input:checked ~ .checkmark {
-            border: 3px solid $purple;
-          }
-
-          /* Create the checkmark/indicator (hidden when not checked) */
-          .checkmark:after {
-            content: "";
-            position: absolute;
-            display: none;
-          }
-
-          /* Show the checkmark when checked */
-          .container input:checked ~ .checkmark:after {
-            display: block;
-          }
-
-          /* Style the checkmark/indicator */
-          .container .checkmark:after {
-            left: 6px;
-            top: 2px;
-            width: 5px;
-            height: 10px;
-            border: solid $purple;
-            border-width: 0 3px 3px 0;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-          }
 
           button {
             width: 100%;
@@ -171,6 +100,267 @@ $gray: #b2b2b2;
   }
 
 }
+
+
+.forget-pass {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > a {
+    font-size: 1.6rem;
+    color: $purple;
+  }
+/* The container */
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-top: 4px;
+  margin-left: 0;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;border: 2px solid $purple;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  border: 3px solid $purple;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid $purple;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+}
+
+
+
+.container {
+  .content-box {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 150px;
+    margin-top: -165px;
+    background-color: #fff;
+    box-shadow: 0px 0px 60px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 80px;
+    .content-title {
+      font-size: 2.6rem;
+      font-family: 'AvenirBlack';
+      color: $purple;
+      width: 90%;
+    }
+    .content-summary {
+      font-size: 1.6rem;
+      color: $purple;
+      width: 90%;
+      opacity: 0.6;
+      margin-top: 5px;
+      text-align: left;
+    }
+    .page-content {
+      width: 80%;
+      height: auto;
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+
+.form-label {
+  width: 90%;
+  border-bottom: 1px solid #eae5ed;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  &:first-child {
+    margin-top: 0;
+  }
+  .page-content {
+    width: 100% !important;
+    .label-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      label {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        height: 38px;
+        span {
+          flex: 1;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          color: #080113;
+        }
+        input {
+          flex: 1.5;
+          height: 100%;
+          z-index: 1;
+          background-color: #e1dde7;
+          border: none;
+          text-indent: 10px;
+        }
+
+        &:first-child {
+          margin-right: 25px;
+        }
+        &:last-child {
+          margin-left: 25px;
+        }
+      }
+      
+    }
+  }
+}
+
+.forget-register {
+  width: 90%;
+  margin-top: 20px;
+  label {
+    & > a {
+      text-decoration: underline;
+      color: #080113;
+    }
+    & > strong {
+      color: #080113;
+      font-family: 'AvenirBlack';
+    }
+  }
+}
+
+.policy-text {
+  width: 90%;
+  max-height: 210px;
+  margin-top: 30px;
+  border: 2px solid $purple;
+  padding: 10px;
+  overflow: auto;
+  p {
+    font-size: 1.8rem;
+    color: #080113;
+    line-height: 1.3;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+   
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background:$purple;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    opacity: 0.8; 
+  }
+}
+
+.register-btn {
+  width: 295px;
+  height: 60px;
+  background-color: $purple;
+  color: #fff;
+  font-family: 'AvenirBlack';
+  font-size: 2.1rem;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.bottom-banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  margin-top: 90px;
+  background-image: url(../images/mutlumusteri.jpg);
+  background-position: 50% 30%;
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .banner-text {
+      font-size: 3.6rem;
+      color: #fff;
+      text-shadow: 0px 0px 15px rgba(0,0,0,1);
+      font-family: 'AvenirBlack';
+    }
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -202,7 +392,97 @@ $gray: #b2b2b2;
 
 
 
+.container {
+  .content-box {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 50px;
+    margin-top: -165px;
+    background-color: #fff;
+    box-shadow: 0px 0px 60px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 40px 10px;
+    .content-title {
+      font-size: 2rem;
+    }
+    .content-summary {
+      font-size: 1.3rem;
+    }
+  }
+}
 
+
+
+
+.form-label {
+  width: 90%;
+  border-bottom: 1px solid #eae5ed;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  &:first-child {
+    margin-top: 0;
+  }
+  .page-content {
+    width: 100% !important;
+    .label-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      flex-direction: column;
+      label {
+        margin-bottom: 10px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        height: 38px;
+        width: 100%;
+        font-size: 1.4rem;
+        span {
+          flex: 1;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          color: #080113;
+        }
+        input {
+          flex: 1;
+          height: 100%;
+          z-index: 1;
+          background-color: #e1dde7;
+          border: none;
+          text-indent: 10px;
+        }
+
+        &:first-child {
+          margin-right: 0px;
+        }
+        &:last-child {
+          margin-left: 0px;
+        }
+      }
+      
+    }
+  }
+}
+
+
+.forget-register {
+  width: 90%;
+  margin-top: 30px;
+  label {
+    & > a {
+      text-decoration: underline;
+      color: #080113;
+    }
+    & > strong {
+      color: #080113;
+      font-family: 'AvenirBlack';
+    }
+  }
+}
 
 
 }
