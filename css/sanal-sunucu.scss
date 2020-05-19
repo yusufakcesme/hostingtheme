@@ -1,0 +1,135 @@
+
+$darkPurple: #0f011a;
+$purple: #2d0452;
+$red: #ff2a00;
+$yellow: #ffaf00;
+$blue: #00baff;
+$gray: #b2b2b2;
+
+.main-slider {
+  min-width: 100%;
+  height: 374px;
+  background-color: $gray;
+  background-image: url(../images/sanalsunucubanner.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
+.bottom-banner {
+  background-image: url(../images/sanalsunucubanner.jpg);
+  margin-top: 50px;
+}
+.vds-tablo-titles {
+  width: calc(100% - 300px);
+  height: 30px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 120px;
+  p {
+    font-family: 'AvenirBlack';
+    color: #080113;
+    font-size: 1.8rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.vds-tablo {
+  width: 100%;
+  height: auto;
+
+ 
+  .vds-tablo-row {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      .vds-title {
+        border-top-left-radius: 20px;
+      }
+      .vds-detail {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+    }
+
+    &:last-child {
+      .vds-title {
+        border-bottom-left-radius: 20px;
+      }
+      .vds-detail {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+
+    .vds-title {
+      width: 190px;
+      height: 50px;
+      padding-right: 20px;
+      background-color: #a28ec2;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'AvenirBlack';
+      border: 1px solid #b0a1ca;
+
+    } 
+    .vds-detail {
+      flex: 1;
+      height: 50px;
+      background-color: #f8f8f8;
+      margin-left: -20px;
+      display: flex;
+      li {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        color: #080113;
+        border-right: 1px solid #e6e6e6;
+        &:last-child {
+          border-right: 0px;
+        }
+        & > span {
+          color: $red;
+          margin-top: -8px;
+        }
+        .satin-al {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 110px;
+          height: 35px;
+          border-radius: 35px;
+          color: #fff;
+          font-family: 'AvenirBlack';
+          font-size: 1.6rem;
+          background-color: $purple;
+        }
+      }
+    }
+  }
+
+}
+
+.cont-2 {
+  .content-box {
+    margin-top: -25px;
+  }
+}
+
+.cont-3 {
+  .content-box {
+    margin-top: -25px;
+  }
+}

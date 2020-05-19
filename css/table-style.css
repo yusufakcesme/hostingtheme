@@ -1,0 +1,252 @@
+@charset "UTF-8";
+.success {
+  background-color: #62bd19;
+  color: #fff;
+}
+
+.danger {
+  background-color: #BE3047;
+  color: #fff;
+}
+
+.askıda {
+  background-color: #ff7200;
+  color: #fff;
+}
+
+.beklemede {
+  background-color: #2d0452;
+  color: #fff;
+}
+
+.iptal {
+  background-color: #000;
+  color: #fff;
+}
+
+.content-box {
+  padding: 40px !important;
+}
+
+.page-content {
+  width: 100% !important;
+}
+
+.thead {
+  width: 100%;
+  height: 50px;
+  background-color: #2d0452;
+  border-radius: 10px 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.thead p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.thead .table-search {
+  width: 280px;
+  height: 35px;
+  border-radius: 35px;
+  background-color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.thead .table-search input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  background-color: #fff;
+  text-indent: 40px;
+}
+
+.thead .table-search button {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 2.4rem;
+  color: #c0b3cb;
+  cursor: pointer;
+}
+
+.table-footer {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.table-footer .limit-sort {
+  font-size: 1.5rem;
+  color: #b2b2b2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-footer .limit-sort input {
+  margin-right: 5px;
+  width: 42px;
+  height: 25px;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #2d0452;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+
+.table-footer .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-footer .pagination span {
+  padding: 2px 10px;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #2d0452;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.table-footer .pagination button {
+  background: none;
+  border: none;
+  color: #b2b2b2;
+  font-size: 1.6rem;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
+  background-color: #efefef;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+  text-align: center;
+}
+
+#myTable th {
+  font-family: 'AvenirBlack';
+  cursor: pointer;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+  background-color: #efefef;
+}
+
+#myTable tr td p {
+  text-align: left;
+  display: inline-block;
+}
+
+#myTable tr td p span {
+  font-family: 'AvenirBlack';
+  color: #2d0452;
+}
+
+#myTable tr td > span {
+  margin: 0 auto;
+  display: block;
+  width: 125px;
+  padding: 5px auto;
+  border-radius: 7px;
+}
+
+#myTable tr td.purple-c {
+  font-family: 'AvenirBlack';
+  color: #2d0452;
+}
+
+#myTable tr:first-child {
+  border-bottom: 0px;
+}
+
+#myTable tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#myTable tr th {
+  background-color: #dbd7df;
+}
+
+#myTable tr th:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+#myTable tr th:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+.limit-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #2d0452;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+}
+
+.yeni-talep {
+  width: 300px;
+  height: 36px;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+.tutar {
+  text-align: center !important;
+}
+/*# sourceMappingURL=table-style.css.map */
