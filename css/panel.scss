@@ -305,6 +305,185 @@ $gray: #b2b2b2;
   }
 }
 
+.bottom-radius {
+  border-radius: 100px !important;
+  margin-bottom: 50px;
+}
+
+.ticket-form {
+  width: 100%;
+  height: auto;
+  .input-label {
+    display: flex;
+    margin: auto -15px;
+    & > input {
+      margin: 0 15px 30px 15px;
+    }
+    .select-box:nth-child(2) {
+      margin: 0 30px;
+    }
+  }
+  .select-label {
+    margin: 0px;
+  }
+  .ticket-input {
+    width: 100%;
+    height: 60px;
+    border: 1.5px solid $purple;
+    text-indent: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    &::placeholder {
+      color: $purple;
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 150px;
+    border: 1.5px solid $purple;
+    text-indent: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    resize: none;
+    padding: 15px 0;
+    font-family: 'AvenirMedium';
+    &::placeholder {
+      color: $purple;
+    }
+  }
+  button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: $purple;
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: 'AvenirBlack';
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+// CUSTOM SELECT BOX 
+.select-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #60666d;
+  
+  
+  &__current {
+    position: relative;
+    border: 2px solid $purple;
+    cursor: pointer;
+    outline: none;
+    
+    &:focus {
+      & + .select-box__list {
+        opacity: 1;
+
+        // We have to set "animation-name: none;" to make the list visible (read below how it works)
+
+        animation-name: none;
+        
+        .select-box__option {
+          cursor: pointer;
+        }
+      }
+      
+      .select-box__icon {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+  
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.3;
+    transition: 0.2s ease;
+  }
+  
+  &__value {
+    display: flex;
+  }
+  
+  &__input {
+    display: none;
+    
+    &:checked + .select-box__input-text {
+      display: block;
+    }
+  }
+  
+  &__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    color: $purple;
+    background-color: #fff;
+  }
+  
+  &__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    z-index: 99;
+    
+    // We need to use animation with delay.
+    // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.
+    // This delay will not be noticed because we set "opacity" to "0".
+    // We also use "animation-fill-mode: forwards" to make the list stay hidden.
+    
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+  }
+  
+  &__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    color: $purple;
+    
+    &:hover,
+    &:focus {
+      color: #546c84;
+      background-color: #fbfbfb;
+    }
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1170px) {
 
@@ -315,6 +494,7 @@ $gray: #b2b2b2;
       background-color: rgba(0,0,0,.4);
       .container {
         padding-top: 30px;
+        padding-bottom: 40px;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -434,14 +614,14 @@ $gray: #b2b2b2;
   .content-box {
     width: 100%;
     height: auto;
-    border-radius: 50px 50px 0 0 ;
-    margin-top: 0px;
+    border-radius: 50px !important;
+    margin-top: -40px;
     background-color: #fff;
     box-shadow: 0px 0px 60px rgba(0,0,0,.3);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 80px 10px 80px;
+    padding: 20px;
     .content-title {
       font-size: 2rem;
       font-family: 'AvenirBlack';
@@ -456,7 +636,7 @@ $gray: #b2b2b2;
       text-align: center;
     }
     .page-content {
-      width: 80%;
+      width: 100%;
       height: auto;
       margin-top: 30px;
       font-size: 2rem;
@@ -466,7 +646,6 @@ $gray: #b2b2b2;
     }
   }
 }
-
 
 
 .panel-profile {
@@ -623,6 +802,67 @@ $gray: #b2b2b2;
     }
   }
 }
+
+
+
+.ticket-form {
+  width: 100%;
+  height: auto;
+  .input-label {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px;
+    & > input {
+      margin: 0 0 30px 0;
+    }
+    .select-box:nth-child(2) {
+      margin: 0px;
+    }
+  }
+  .select-label {
+    margin: 0px;
+    .select-box {
+      margin-bottom: 30px !important;
+    }
+  }
+  .ticket-input {
+    width: 100%;
+    height: 60px;
+    border: 1.5px solid $purple;
+    text-indent: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    &::placeholder {
+      color: $purple;
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 150px;
+    border: 1.5px solid $purple;
+    text-indent: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    resize: none;
+    padding: 15px 0;
+    font-family: 'AvenirMedium';
+    &::placeholder {
+      color: $purple;
+    }
+  }
+  button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: $purple;
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: 'AvenirBlack';
+    margin-top: 0px;
+    cursor: pointer;
+  }
+}
+
 
 
 

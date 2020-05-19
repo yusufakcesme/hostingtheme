@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/panel.css">
 
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
 
@@ -195,11 +196,96 @@
   </div>
 
   <div class="container">
-    <div class="content-box">
-      <h2 class="content-title">MUSTERI PANELINE HOS GELDINIZ!</h2>
+    <div class="content-box bottom-radius">
+      <h2 class="content-title">PANEL TICKET</h2>
       <p class="content-summary">LOGO'nun ayrıcalıklı dünyasında aradığınız her şeye ulaşacaksınız. Hem de tek bir
         tıkla!</p>
       <div class="page-content">
+
+        <form action="" class="ticket-form">
+          <div class="input-label">
+            <input type="text" class="ticket-input" placeholder="Isim Soyisim">
+            <input type="text" class="ticket-input" placeholder="Mailiniz">
+          </div>
+          <input type="text" class="ticket-input" placeholder="Baslik">
+          <textarea placeholder="Destek Talebiniz"></textarea>
+          <div class="input-label select-label">
+
+            <div class="select-box">
+              <div class="select-box__current" tabindex="1">
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1"
+                    name="select1" checked="checked" />
+                  <p class="select-box__input-text">test 0</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="1" value="2"
+                    name="select1" checked="checked" />
+                  <p class="select-box__input-text">test 1</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="2" value="5"
+                    name="select1" checked="checked" />
+                  <p class="select-box__input-text">Departman</p>
+                </div>
+                <span><i class="fa fa-chevron-down select-box__icon"></i></span>
+              </div>
+              <ul class="select-box__list">
+                <li><label class="select-box__option" for="0" aria-hidden="aria-hidden">test 0</label></li>
+                <li><label class="select-box__option" for="1" aria-hidden="aria-hidden">test 1</label></li>
+                <li><label class="select-box__option" for="2" aria-hidden="aria-hidden">test 2</label></li>
+              </ul>
+            </div>
+
+            <div class="select-box">
+              <div class="select-box__current" tabindex="2">
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="3" value="1"
+                    name="select2" checked="checked" />
+                  <p class="select-box__input-text">test 3</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="4" value="2"
+                    name="select2" checked="checked" />
+                  <p class="select-box__input-text">test 4</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="5" value="3"
+                    name="select2" checked="checked" />
+                  <p class="select-box__input-text">Iliskili Hizmet</p>
+                </div>
+                <span><i class="fa fa-chevron-down select-box__icon"></i></span>
+              </div>
+              <ul class="select-box__list">
+                <li><label class="select-box__option" for="3" aria-hidden="aria-hidden">test 3</label></li>
+                <li><label class="select-box__option" for="4" aria-hidden="aria-hidden">test 4</label></li>
+                <li><label class="select-box__option" for="5" aria-hidden="aria-hidden">test 5</label></li>
+              </ul>
+            </div>
+
+            <div class="select-box">
+              <div class="select-box__current" tabindex="2">
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="6" value="1"
+                    name="select3" checked="checked" />
+                  <p class="select-box__input-text">test 6</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="7" value="2"
+                    name="select3" checked="checked" />
+                  <p class="select-box__input-text">test 7</p>
+                </div>
+                <div class="select-box__value"><input class="select-box__input" type="radio" id="8" value="3"
+                    name="select3" checked="checked" />
+                  <p class="select-box__input-text">Oncelik</p>
+                </div>
+                <span><i class="fa fa-chevron-down select-box__icon"></i></span>
+              </div>
+              <ul class="select-box__list">
+                <li><label class="select-box__option" for="6" aria-hidden="aria-hidden">test 6</label></li>
+                <li><label class="select-box__option" for="7" aria-hidden="aria-hidden">test 7</label></li>
+                <li><label class="select-box__option" for="8" aria-hidden="aria-hidden">test 8</label></li>
+              </ul>
+            </div>
+          </div>
+          <button type="submit">GONDER</button>
+        </form>
+
+
+
+
       </div>
     </div>
   </div>
@@ -274,6 +360,7 @@
 
   <script>
 
+
     $('.panel-account').on('click', function () {
       $('.panel-bottom').slideToggle("fast", function () {
         $('.panel-settings').toggleClass('active-panel')
@@ -282,138 +369,6 @@
 
   </script>
 
-  <!--
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-  background-color: #efefef;
-}
-
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-  background-color: #efefef;
-}
-
-#myTable tr:first-child {
-border-bottom: 0px;
-}
-
-#myTable tr:nth-child(odd) {
-  background-color: #dddddd;
-}
-#myTable tr th {
-background-color: #dbd7df;
-}
-#myTable tr th:first-child {
-border-bottom-left-radius: 20px;
-}
-
-#myTable tr th:last-child {
-border-bottom-right-radius: 20px;
-}
-
-</style>
-</head>
-<body>
-
-<h2>My Customers</h2>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
-<table id="myTable">
-  <tr class="header">
-    <th style="width:25%;">Name</th>
-    <th style="width:25%;">Country</th>
-    <th style="width:25%;">Name</th>
-    <th style="width:25%;">Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-     <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-  <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-     <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-     <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-     <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-     <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-  </tr>
-
-</table>
-
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
-</script>
-
-</body>
-</html>
-
-
--->
 
 
 

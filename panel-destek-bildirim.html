@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/panel.css">
 
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
 
@@ -200,6 +203,12 @@
       <p class="content-summary">LOGO'nun ayrıcalıklı dünyasında aradığınız her şeye ulaşacaksınız. Hem de tek bir
         tıkla!</p>
       <div class="page-content">
+
+
+
+
+
+
       </div>
     </div>
   </div>
@@ -273,6 +282,10 @@
 
 
   <script>
+
+    $(document).ready(function () {
+      $('#example').DataTable();
+    });
 
     $('.panel-account').on('click', function () {
       $('.panel-bottom').slideToggle("fast", function () {
