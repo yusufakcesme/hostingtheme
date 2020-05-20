@@ -14,6 +14,11 @@ $gray: #b2b2b2;
   background-position: 50% 30%;
 }
 
+.page-title {
+  margin-top: 50px !important;
+}
+
+
 .bottom-banner {
   background-image: url(../images/sslbanner.jpg) !important;
   margin-top: 50px;
@@ -61,6 +66,10 @@ $gray: #b2b2b2;
   
   
 
+  .page-title {
+    margin-top: -90px !important;
+  }
+  
 
 
 } // media query end
