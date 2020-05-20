@@ -1902,6 +1902,374 @@ footer > .container .footer-links .footer-form button {
     border-radius: 4px;
     font-size: 2.2rem;
     cursor: pointer;
+    display: block;
+  }
+  /* MAIN SLIDER */
+  .main-slider {
+    width: 100%;
+    height: 544px;
+    background-color: #b2b2b2;
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main-slider .slider-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .main-slider .slider-overlay .container {
+    height: 100%;
+    position: relative;
+  }
+  .main-slider .slider-overlay .container .nextArrow {
+    position: absolute;
+    font-size: 2.4rem;
+    color: #fff;
+    top: 50%;
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    right: 0px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 5px;
+    border-radius: 4px;
+  }
+  .main-slider .slider-overlay .container .prevArrow {
+    position: absolute;
+    font-size: 2.4rem;
+    color: #fff;
+    top: 50%;
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    left: 0px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 5px;
+    border-radius: 4px;
+    z-index: 99;
+  }
+  .main-slider .slider-overlay .container .slider {
+    width: 100%;
+    height: 100%;
+  }
+  .main-slider .slider-overlay .container .slider .slider-item {
+    width: 100%;
+    height: 444px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-slider .slider-overlay .container .slider .slider-item .slider-text {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 !important;
+            flex: 1 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .main-slider .slider-overlay .container .slider .slider-item .slider-text h1 {
+    font-size: 3.4rem;
+    color: #fff;
+    font-family: 'AvenirLight';
+    font-weight: lighter;
+  }
+  .main-slider .slider-overlay .container .slider .slider-item .slider-text a.slider-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    height: 40px;
+    width: 140px;
+    margin: 20px auto;
+    border-radius: 40px;
+    border: 2px solid #fff;
+    border-style: dashed;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .main-slider .slider-overlay .container .slider .slider-item .slider-asset {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 !important;
+            flex: 1 !important;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-slider .slider-overlay .container .slider .slider-item .slider-asset img {
+    height: 100%;
+  }
+  /* ECONOMIC PACK 4 */
+  .economic-pack-4 {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+  }
+  .economic-pack-4 .container h1 {
+    font-size: 2.4rem;
+    color: #000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .economic-pack-4 .container .economic-pack-cards {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .economic-pack-4 .container .economic-pack-cards .pack-card {
+    width: 305px;
+    height: 287px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+  }
+  .economic-pack-4 .container .economic-pack-cards .pack-card::before {
+    width: 240px;
+  }
+  /* SERVER DETAILS RESPONSIVE */
+  .server-details {
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+  }
+  .server-details .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* first one */
+  }
+  .server-details .container .server-rent-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: auto;
+    margin-right: 0px !important;
+    border-radius: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 22px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 35px;
+  }
+  .server-details .container .server-rent-card h2 {
+    font-size: 2.4rem;
+    color: #000;
+    margin-bottom: 7px;
+  }
+  .server-details .container .server-rent-card > p {
+    font-size: 1.4rem;
+    color: #b2b2b2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .server-details .container .server-rent-card .detail-cards {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .server-details .container .server-rent-card .detail-cards .card-item {
+    width: 100%;
+    height: auto !important;
+    margin: 5px;
+    padding: 5px 10px;
+  }
+  .server-details .container .server-rent-card .detail-cards .card-item p {
+    font-size: 1.2rem;
+    margin-top: -7px;
+  }
+  .server-details .container .server-rent-card .detail-cards .card-item .card-bottom {
+    margin-top: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .server-details .container .server-rent-card .detail-cards .card-item .card-bottom span {
+    font-size: 2rem;
+  }
+  .server-details .container .server-rent-card .detail-cards .card-item .card-bottom a {
+    width: auto;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+  }
+  .server-details .container .server-price-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    border-radius: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .server-details .container .server-price-card h2 {
+    font-size: 2.4rem;
+    color: #000;
+    margin-bottom: 7px;
+  }
+  .server-details .container .server-price-card p {
+    font-size: 1.4rem;
+    color: #b2b2b2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .server-details .container .server-price-card .price-table {
+    width: 100%;
+    height: auto;
+  }
+  .server-details .container .server-price-card .price-table .table-titles {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 44px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .server-details .container .server-price-card .price-table .table-titles p {
+    font-size: 1.1rem;
+    color: #000;
+    text-transform: uppercase;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+  }
+  .server-details .container .server-price-card .price-table .table-row {
+    width: 100%;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .server-details .container .server-price-card .price-table .table-row span {
+    font-family: 'AvenirBlack';
+    color: #ff2a00;
+    font-size: 1.6rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 0px;
+  }
+  .server-details .container .server-price-card .price-table .table-row p {
+    font-size: 1.4rem;
+    font-family: 'AvenirLight';
+    color: #000;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: right;
+    padding: 0 5px;
   }
 }
 
