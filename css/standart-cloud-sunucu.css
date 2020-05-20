@@ -1,0 +1,133 @@
+.enuygun {
+  background-color: #2d0452;
+  color: #fff;
+}
+
+.firsat {
+  background-color: #ff2a00;
+  color: #fff;
+}
+
+.enpopuler {
+  background-color: #00baff;
+  color: #fff;
+}
+
+.enguclu {
+  background-color: #ffaf00;
+  color: #fff;
+}
+
+.diamond {
+  background-color: #000;
+  color: #fff;
+}
+
+.main-slider {
+  min-width: 100%;
+  height: 374px;
+  background-color: #b2b2b2;
+  background-image: url(../images/standart-cloud-sunucu.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
+.vds-detail {
+  z-index: 60;
+}
+
+.vds-title {
+  position: relative;
+}
+
+.vds-title span {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  min-width: 75px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.1rem;
+  -webkit-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
+}
+
+.vds-title span.enuygun::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  right: -29px;
+  z-index: 50;
+  border-style: solid;
+  border-width: 14px 0 14px 30px;
+  border-color: transparent transparent transparent #2d0452;
+}
+
+.vds-title span.firsat::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  right: -29px;
+  z-index: 50;
+  border-style: solid;
+  border-width: 14px 0 14px 30px;
+  border-color: transparent transparent transparent #ff2a00;
+}
+
+.vds-title span.enpopuler::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  right: -29px;
+  z-index: 50;
+  border-style: solid;
+  border-width: 14px 0 14px 30px;
+  border-color: transparent transparent transparent #00baff;
+}
+
+.vds-title span.enguclu::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  right: -29px;
+  z-index: 50;
+  border-style: solid;
+  border-width: 14px 0 14px 30px;
+  border-color: transparent transparent transparent #ffaf00;
+}
+
+.vds-title span.diamond::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  right: -29px;
+  z-index: 50;
+  border-style: solid;
+  border-width: 14px 0 14px 30px;
+  border-color: transparent transparent transparent #000;
+}
+
+@media only screen and (max-width: 1170px) {
+  .page-content {
+    padding-left: 80px;
+  }
+  .vds-title {
+    max-width: 150px;
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=standart-cloud-sunucu.css.map */

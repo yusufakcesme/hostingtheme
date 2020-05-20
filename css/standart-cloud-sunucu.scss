@@ -1,0 +1,134 @@
+$darkPurple: #0f011a;
+$purple: #2d0452;
+$red: #ff2a00;
+$yellow: #ffaf00;
+$blue: #00baff;
+$gray: #b2b2b2;
+
+.enuygun {
+  background-color: $purple;
+  color: #fff;
+}
+
+.firsat {
+  background-color: $red;
+  color: #fff;
+}
+
+.enpopuler {
+  background-color: $blue;
+  color: #fff;
+}
+
+.enguclu {
+  background-color: $yellow;
+  color: #fff;
+}
+
+.diamond {
+  background-color: #000;
+  color: #fff;
+}
+
+.main-slider {
+  min-width: 100%;
+  height: 374px;
+  background-color: $gray;
+  background-image: url(../images/standart-cloud-sunucu.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
+.vds-detail {
+  z-index: 60;
+}
+
+.vds-title {
+ position: relative;
+ span {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  min-width: 75px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.1rem;
+  transform: translate(-100%, 0%);
+
+  &.enuygun::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right: -29px;
+    z-index: 50;
+    border-style: solid;
+    border-width: 14px 0 14px 30px;
+    border-color: transparent transparent transparent $purple;
+  }
+
+  &.firsat::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right: -29px;
+    z-index: 50;
+    border-style: solid;
+    border-width: 14px 0 14px 30px;
+    border-color: transparent transparent transparent $red;
+  }
+
+  &.enpopuler::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right: -29px;
+    z-index: 50;
+    border-style: solid;
+    border-width: 14px 0 14px 30px;
+    border-color: transparent transparent transparent $blue;
+  }
+
+  &.enguclu::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right: -29px;
+    z-index: 50;
+    border-style: solid;
+    border-width: 14px 0 14px 30px;
+    border-color: transparent transparent transparent $yellow;
+  }
+
+  &.diamond::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right: -29px;
+    z-index: 50;
+    border-style: solid;
+    border-width: 14px 0 14px 30px;
+    border-color: transparent transparent transparent #000;
+  }
+
+ }
+}
+
+
+@media only screen and (max-width: 1170px) {
+  .page-content {
+    padding-left: 80px;
+  }
+
+  .vds-title {
+    max-width: 150px;
+    font-size: 1.6rem;
+  }
+}
