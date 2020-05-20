@@ -12,6 +12,10 @@
   margin-top: 50px;
 }
 
+.bottom-banner .banner-text {
+  text-align: center;
+}
+
 .vds-tablo-titles {
   width: calc(100% - 300px);
   height: 30px;
@@ -23,6 +27,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 120px;
+  margin-bottom: 0px;
 }
 
 .vds-tablo-titles p {
@@ -68,8 +73,17 @@
   border-top-right-radius: 20px;
 }
 
+.vds-tablo .vds-tablo-row:nth-child(2) .vds-title {
+  background-color: #7a63a0;
+}
+
+.vds-tablo .vds-tablo-row:nth-child(3) .vds-title {
+  background-color: #4b3969;
+}
+
 .vds-tablo .vds-tablo-row:last-child .vds-title {
   border-bottom-left-radius: 20px;
+  background-color: #2d0452;
 }
 
 .vds-tablo .vds-tablo-row:last-child .vds-detail {
@@ -164,5 +178,63 @@
 
 .cont-3 .content-box {
   margin-top: -25px;
+}
+
+@media only screen and (max-width: 1170px) {
+  .page-title {
+    font-size: 3.4rem !important;
+  }
+  .cont-2 .content-box {
+    margin-top: 25px;
+  }
+  .cont-3 .content-box {
+    margin-top: 25px;
+  }
+  .page-content {
+    max-width: 95%;
+    margin: 0 auto;
+    overflow-x: auto;
+    position: relative;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .page-content::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 5px;
+  }
+  .page-content::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 5px;
+  }
+  .page-content::-webkit-scrollbar-thumb {
+    background: #2d0452;
+    border-radius: 5px;
+  }
+  .page-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .vds-tablo-row {
+    min-width: 1000px;
+  }
+  .vds-tablo-titles p {
+    font-family: 'AvenirBlack';
+    color: #080113;
+    font-size: 1.6rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 110px;
+  }
 }
 /*# sourceMappingURL=sanal-sunucu.css.map */

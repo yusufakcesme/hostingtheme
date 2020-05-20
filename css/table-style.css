@@ -249,4 +249,45 @@
 .tutar {
   text-align: center !important;
 }
+
+@media only screen and (max-width: 1170px) {
+  .content-box {
+    padding: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  .page-content {
+    max-width: 95%;
+    margin: 0 auto;
+    overflow-x: auto;
+    position: relative;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .page-content::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 5px;
+  }
+  .page-content::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 5px;
+  }
+  .page-content::-webkit-scrollbar-thumb {
+    background: #2d0452;
+    border-radius: 5px;
+  }
+  .page-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .page-content .thead {
+    min-width: 1000px;
+  }
+  .page-content table#myTable {
+    min-width: 1000px;
+  }
+  .page-content .table-footer {
+    min-width: 1000px;
+  }
+}
 /*# sourceMappingURL=table-style.css.map */

@@ -18,6 +18,9 @@ $gray: #b2b2b2;
 .bottom-banner {
   background-image: url(../images/sanalsunucubanner.jpg);
   margin-top: 50px;
+  .banner-text {
+    text-align: center;
+  }
 }
 .vds-tablo-titles {
   width: calc(100% - 300px);
@@ -26,6 +29,7 @@ $gray: #b2b2b2;
   display: flex;
   align-items: center;
   margin-right: 120px;
+  margin-bottom: 0px;
   p {
     font-family: 'AvenirBlack';
     color: #080113;
@@ -49,9 +53,11 @@ $gray: #b2b2b2;
     display: flex;
     align-items: center;
 
+
     &:first-child {
       .vds-title {
         border-top-left-radius: 20px;
+       
       }
       .vds-detail {
         border-top-left-radius: 20px;
@@ -59,9 +65,22 @@ $gray: #b2b2b2;
       }
     }
 
+    &:nth-child(2) {
+      .vds-title {
+        background-color: #7a63a0;
+      }
+    }
+
+    &:nth-child(3) {
+      .vds-title {
+        background-color: #4b3969;
+      }
+    }
+
     &:last-child {
       .vds-title {
         border-bottom-left-radius: 20px;
+        background-color: $purple;
       }
       .vds-detail {
         border-bottom-left-radius: 20px;
@@ -80,6 +99,7 @@ $gray: #b2b2b2;
       justify-content: center;
       font-family: 'AvenirBlack';
       border: 1px solid #b0a1ca;
+
 
     } 
     .vds-detail {
@@ -117,9 +137,8 @@ $gray: #b2b2b2;
           background-color: $purple;
         }
       }
-    }
-  }
-
+    } 
+}
 }
 
 .cont-2 {
@@ -133,3 +152,78 @@ $gray: #b2b2b2;
     margin-top: -25px;
   }
 }
+
+
+
+@media only screen and (max-width: 1170px) {
+
+  .page-title {
+    font-size: 3.4rem !important;
+  }
+
+  .cont-2 {
+    .content-box {
+      margin-top: 25px;
+    }
+  }
+  
+  .cont-3 {
+    .content-box {
+      margin-top: 25px;
+    }
+  }
+  
+
+.page-content {
+  max-width: 95%;
+  margin: 0 auto;
+  overflow-x: auto;
+  position: relative;
+
+  /* width */
+&::-webkit-scrollbar {
+  width: 10px;
+  margin-top: 5px;
+}
+
+/* Track */
+&::-webkit-scrollbar-track {
+  background: #ddd; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+&::-webkit-scrollbar-thumb {
+  background: #2d0452;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+&::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+  
+}
+
+.vds-tablo-row {
+  min-width: 1000px;
+}
+
+
+.vds-tablo-titles {
+  p {
+    font-family: 'AvenirBlack';
+    color: #080113;
+    font-size: 1.6rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+  }
+}
+
+
+} //media query end
+
