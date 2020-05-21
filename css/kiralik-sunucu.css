@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container .content-box {
   width: 100%;
   min-height: 330px;
@@ -363,6 +364,183 @@
   margin-bottom: 10px;
 }
 
+/* barındırma paktleri */
+.barindirma-paketleri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.barindirma-paketleri .paket-col {
+  width: 240px;
+  height: auto;
+  position: relative;
+}
+
+.barindirma-paketleri .paket-col .kampanya {
+  width: 138px;
+  height: 32px;
+  background-color: #be3047;
+  color: #fff;
+  font-family: 'AvenirBlack';
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: -28px;
+  right: 15px;
+  border-radius: 16px 16px 0px 16px;
+}
+
+.barindirma-paketleri .paket-col:first-child {
+  margin-right: -15px;
+  z-index: 9;
+}
+
+.barindirma-paketleri .paket-col:first-child .paket-title {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.barindirma-paketleri .paket-col:first-child .paket-specs {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.barindirma-paketleri .paket-col:nth-child(2) {
+  margin-right: -15px;
+  z-index: 8;
+}
+
+.barindirma-paketleri .paket-col:nth-child(2) .paket-title {
+  background-color: #7a63a0;
+  border-top-right-radius: 15px;
+}
+
+.barindirma-paketleri .paket-col:nth-child(2) > span {
+  color: #7a63a0;
+}
+
+.barindirma-paketleri .paket-col:nth-child(2) > a {
+  background-color: #7a63a0;
+}
+
+.barindirma-paketleri .paket-col:nth-child(3) {
+  margin-right: -15px;
+  z-index: 7;
+}
+
+.barindirma-paketleri .paket-col:nth-child(3) .paket-title {
+  background-color: #4b3969;
+  border-top-right-radius: 15px;
+}
+
+.barindirma-paketleri .paket-col:nth-child(3) > span {
+  color: #4b3969;
+}
+
+.barindirma-paketleri .paket-col:nth-child(3) > a {
+  background-color: #4b3969;
+}
+
+.barindirma-paketleri .paket-col:last-child .paket-title {
+  background-color: #2d0452;
+  border-top-right-radius: 15px;
+}
+
+.barindirma-paketleri .paket-col:last-child .paket-specs {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.barindirma-paketleri .paket-col:last-child > span {
+  color: #2d0452;
+}
+
+.barindirma-paketleri .paket-col:last-child > a {
+  background-color: #2d0452;
+}
+
+.barindirma-paketleri .paket-col .paket-title {
+  width: 100%;
+  height: 70px;
+  padding-bottom: 20px;
+  background-color: #a28ec2;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'AvenirBlack';
+}
+
+.barindirma-paketleri .paket-col .paket-specs {
+  width: 100%;
+  height: 350px;
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -20px;
+}
+
+.barindirma-paketleri .paket-col .paket-specs li {
+  font-size: 1.5rem;
+  font-family: 'AvenirRoman';
+  margin-top: 15px;
+}
+
+.barindirma-paketleri .paket-col > span {
+  font-size: 4rem;
+  font-family: 'AvenirBlack';
+  color: #a28ec2;
+  text-align: center;
+  display: block;
+}
+
+.barindirma-paketleri .paket-col > span b {
+  font-family: sans-serif;
+}
+
+.barindirma-paketleri .paket-col > a {
+  width: 150px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  background-color: #a28ec2;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 1170px) {
   .container .content-box {
     width: 100%;
@@ -686,6 +864,197 @@
   }
   .special-offer .container ul li b {
     font-family: 'AvenirBlack';
+  }
+  /* barındırma paketleri (sunucu-barindirma sayfası)*/
+  .barindirma-paketleri {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .barindirma-paketleri .paket-col {
+    width: 240px;
+    height: auto;
+    position: relative;
+    margin-bottom: 35px;
+  }
+  .barindirma-paketleri .paket-col .kampanya {
+    width: 138px;
+    height: 32px;
+    background-color: #be3047;
+    color: #fff;
+    font-family: 'AvenirBlack';
+    font-size: 1.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: -28px;
+    right: 15px;
+    border-radius: 16px 16px 0px 16px;
+  }
+  .barindirma-paketleri .paket-col:first-child {
+    margin-right: -15px;
+    z-index: 9;
+  }
+  .barindirma-paketleri .paket-col:first-child .paket-title {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .barindirma-paketleri .paket-col:first-child .paket-specs {
+    border-radius: 15px;
+  }
+  .barindirma-paketleri .paket-col:nth-child(2) {
+    margin-right: -15px;
+    z-index: 8;
+  }
+  .barindirma-paketleri .paket-col:nth-child(2) .paket-title {
+    background-color: #7a63a0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .barindirma-paketleri .paket-col:nth-child(2) .paket-specs {
+    border-radius: 15px;
+  }
+  .barindirma-paketleri .paket-col:nth-child(2) > span {
+    color: #7a63a0;
+  }
+  .barindirma-paketleri .paket-col:nth-child(2) > a {
+    background-color: #7a63a0;
+  }
+  .barindirma-paketleri .paket-col:nth-child(3) {
+    margin-right: -15px;
+    z-index: 7;
+  }
+  .barindirma-paketleri .paket-col:nth-child(3) .paket-title {
+    background-color: #4b3969;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .barindirma-paketleri .paket-col:nth-child(3) .paket-specs {
+    border-radius: 15px;
+  }
+  .barindirma-paketleri .paket-col:nth-child(3) > span {
+    color: #4b3969;
+  }
+  .barindirma-paketleri .paket-col:nth-child(3) > a {
+    background-color: #4b3969;
+  }
+  .barindirma-paketleri .paket-col:last-child .paket-title {
+    background-color: #2d0452;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .barindirma-paketleri .paket-col:last-child .paket-specs {
+    border-radius: 15px;
+  }
+  .barindirma-paketleri .paket-col:last-child > span {
+    color: #2d0452;
+  }
+  .barindirma-paketleri .paket-col:last-child > a {
+    background-color: #2d0452;
+  }
+  .barindirma-paketleri .paket-col .paket-title {
+    width: 100%;
+    height: 70px;
+    padding-bottom: 20px;
+    background-color: #a28ec2;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'AvenirBlack';
+  }
+  .barindirma-paketleri .paket-col .paket-specs {
+    width: 100%;
+    height: 350px;
+    background-color: #f8f8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -20px;
+  }
+  .barindirma-paketleri .paket-col .paket-specs li {
+    font-size: 1.5rem;
+    font-family: 'AvenirRoman';
+    margin-top: 15px;
+  }
+  .barindirma-paketleri .paket-col > span {
+    font-size: 4rem;
+    font-family: 'AvenirBlack';
+    color: #a28ec2;
+    text-align: center;
+    display: block;
+  }
+  .barindirma-paketleri .paket-col > span b {
+    font-family: sans-serif;
+  }
+  .barindirma-paketleri .paket-col > a {
+    width: 150px;
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fff;
+    background-color: #a28ec2;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .barindirma-paketleri {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .barindirma-paketleri .paket-col {
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin-bottom: 35px;
   }
 }
 /*# sourceMappingURL=kiralik-sunucu.css.map */

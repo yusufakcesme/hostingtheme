@@ -263,11 +263,168 @@ $gray: #b2b2b2;
 }
 
 
+
+/* barındırma paktleri */
+
+
+.barindirma-paketleri {
+  display: flex;
+  margin-top: 30px;
+  .paket-col {
+    width: 240px;
+    height: auto;
+    position: relative;
+
+    .kampanya {
+      width: 138px;
+      height: 32px;
+      background-color: #be3047;
+      color: #fff;
+      font-family: 'AvenirBlack';
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -28px;
+      right: 15px;
+      border-radius: 16px 16px 0px 16px;
+    }
+
+    &:first-child {
+      .paket-title {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .paket-specs {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      margin-right: -15px;
+      z-index: 9;
+    }
+
+    &:nth-child(2) {
+      .paket-title {
+        background-color: #7a63a0;
+        border-top-right-radius: 15px;
+      }
+      margin-right: -15px;
+      z-index: 8;
+
+      & > span {
+        color: #7a63a0;
+      }
+      & > a {
+        background-color: #7a63a0;
+      }
+    }
+
+    &:nth-child(3) {
+      .paket-title {
+        background-color: #4b3969;
+        border-top-right-radius: 15px;
+      }
+      margin-right: -15px;
+      z-index: 7;
+      & > span {
+        color: #4b3969;
+      }
+      & > a {
+        background-color: #4b3969;
+      }
+    }
+  
+    &:last-child {
+      .paket-title {
+        background-color: $purple;
+        border-top-right-radius: 15px;
+      }
+      .paket-specs {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      & > span {
+        color: $purple;
+      }
+      & > a {
+        background-color: $purple;
+      }
+    }
+
+    .paket-title {
+      width: 100%;
+      height: 70px;
+      padding-bottom: 20px;
+      background-color: #a28ec2;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'AvenirBlack';
+    }
+    
+    .paket-specs {
+      width: 100%;
+      height: 350px;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -20px;
+
+      li {
+        font-size: 1.5rem;
+        font-family: 'AvenirRoman';
+        margin-top: 15px;
+      }
+    }
+
+    & > span {
+      font-size: 4rem;
+      font-family: 'AvenirBlack';
+      color: #a28ec2;
+      text-align: center;
+      display: block;
+      b {
+        font-family: sans-serif;
+      }
+    }
+
+    & > a {
+      width: 150px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background-color: #a28ec2;
+      border-radius: 10px;
+      font-size: 1.8rem;
+      margin: 0 auto;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1170px) {
-
-
-
-
 
 .container {
   .content-box {
@@ -521,9 +678,189 @@ $gray: #b2b2b2;
 
 
 
+/* barındırma paketleri (sunucu-barindirma sayfası)*/
+
+
+.barindirma-paketleri {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  .paket-col {
+    width: 240px;
+    height: auto;
+    position: relative;
+    margin-bottom: 35px;
+
+    .kampanya {
+      width: 138px;
+      height: 32px;
+      background-color: #be3047;
+      color: #fff;
+      font-family: 'AvenirBlack';
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -28px;
+      right: 15px;
+      border-radius: 16px 16px 0px 16px;
+    }
+
+    &:first-child {
+      .paket-title {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .paket-specs {
+        border-radius: 15px;
+      }
+      margin-right: -15px;
+      z-index: 9;
+    }
+
+    &:nth-child(2) {
+      .paket-title {
+        background-color: #7a63a0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .paket-specs {
+        border-radius: 15px;
+      }
+      margin-right: -15px;
+      z-index: 8;
+
+      & > span {
+        color: #7a63a0;
+      }
+      & > a {
+        background-color: #7a63a0;
+      }
+    }
+
+    &:nth-child(3) {
+      .paket-title {
+        background-color: #4b3969;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .paket-specs {
+        border-radius: 15px;
+      }
+      margin-right: -15px;
+      z-index: 7;
+      & > span {
+        color: #4b3969;
+      }
+      & > a {
+        background-color: #4b3969;
+      }
+    }
+  
+    &:last-child {
+      .paket-title {
+        background-color: $purple;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .paket-specs {
+        border-radius: 15px;
+      }
+      & > span {
+        color: $purple;
+      }
+      & > a {
+        background-color: $purple;
+      }
+    }
+
+    .paket-title {
+      width: 100%;
+      height: 70px;
+      padding-bottom: 20px;
+      background-color: #a28ec2;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'AvenirBlack';
+    }
+    
+    .paket-specs {
+      width: 100%;
+      height: 350px;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -20px;
+
+      li {
+        font-size: 1.5rem;
+        font-family: 'AvenirRoman';
+        margin-top: 15px;
+      }
+    }
+
+    & > span {
+      font-size: 4rem;
+      font-family: 'AvenirBlack';
+      color: #a28ec2;
+      text-align: center;
+      display: block;
+      b {
+        font-family: sans-serif;
+      }
+    }
+
+    & > a {
+      width: 150px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background-color: #a28ec2;
+      border-radius: 10px;
+      font-size: 1.8rem;
+      margin: 0 auto;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 } // media end
+
+
+@media only screen and (max-width: 450px) {
+  .barindirma-paketleri {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    .paket-col {
+      width: 90%;
+      height: auto;
+      position: relative;
+      margin-bottom: 35px;
+    }
+  }
+
+}
