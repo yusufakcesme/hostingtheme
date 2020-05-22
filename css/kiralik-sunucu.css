@@ -705,6 +705,10 @@
   width: 100%;
 }
 
+.web-hosting-slider {
+  background-image: url(../images/bg1.jpg) !important;
+}
+
 @media only screen and (max-width: 1170px) {
   .container .content-box {
     width: 100%;
