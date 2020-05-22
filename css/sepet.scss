@@ -1,0 +1,461 @@
+
+$darkPurple: #0f011a;
+$purple: #2d0452;
+$red: #ff2a00;
+$yellow: #ffaf00;
+$blue: #00baff;
+$gray: #b2b2b2;
+
+.main-slider {
+  min-width: 100%;
+  height: 374px;
+  background-color: $gray;
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+
+  .slider-overlay {
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      .page-title {
+        font-family: 'Exo';
+        font-size: 4.8rem;
+        color: #fff;
+        margin-top: -70px;
+      }
+      .page-links {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5rem;
+          color: #fff;
+          height: 50px;
+          width: 180px;
+          margin: 0 8px;
+          border-radius: 40px;
+          border: 2px solid #fff;
+          border-style: dashed;              
+          flex-direction: column;
+
+          &.active-sepet-link {
+            box-shadow: 0px 0px 44px rgba(255,255,255,.93) !important;
+          }
+
+          &:first-child {
+            background-color: #a28ec2;
+          }
+          &:nth-child(2) {
+            background-color: #7a63a0;
+          }
+          &:nth-child(3) {
+            background-color: #4b3969;
+          }
+          &:nth-child(4) {
+            background-color: $purple;
+          }
+          &:last-child {
+            background-color: $darkPurple;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.container {
+  .content-box {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 100px;
+    margin-top: -140px;
+    background-color: #fff;
+    box-shadow: 0px 0px 60px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    .content-title {
+      font-size: 2.6rem;
+      font-family: 'AvenirBlack';
+      color: $purple;
+    }
+    .content-summary {
+      font-size: 1.6rem;
+      color: $purple;
+      opacity: 0.6;
+      margin-top: 5px;
+      text-align: center;
+    }
+    .page-content {
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.bottom-banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  margin-top: 90px;
+  background-image: url(../images/mutlumusteri2.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .banner-text {
+      font-size: 3.6rem;
+      color: #fff;
+      text-shadow: 0px 0px 15px rgba(0,0,0,1);
+      font-family: 'AvenirBlack';
+    }
+  }
+}
+
+
+
+
+
+/* SEPET ADIM 1 (PAKET SECİM) */
+.sepet {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+
+  .sepet-content {
+    flex: 1;
+    margin-right: 40px;
+    margin-left: 20px;
+    .content-title {
+      font-size: 2.6rem;
+      font-family: 'AvenirBlack';
+      color: $purple;
+    }
+    .content-summary {
+      font-size: 1.6rem;
+      color: $purple;
+      opacity: 0.6;
+      margin-top: 0px;
+      text-align: left ;
+    }
+
+
+    .sepet-paketler {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .sepet-paket-item {
+        width: 350px;
+        margin-bottom: 30px;
+        height: 400px;
+        border-radius: 15px;
+        background-color: #f8f8f8;
+        overflow: hidden;
+        h3 {
+          background-color: #ecebef;
+          color: #7a63a0;
+          height: 38px;
+          font-size: 1.6rem;
+          line-height: 40px;
+          padding-left: 20px;
+          font-family: 'AvenirBlack';
+        }
+        ul {
+          padding: 15px;
+          list-style-type: disc !important;
+          li {
+            font-size: 1.4rem;
+            list-style-type: disc !important;
+            margin-left: 20px;
+            margin-bottom: 2px;
+            color: #323232;
+          }
+        }
+        .paket-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          p {
+            display: flex;
+            font-size: 2.2rem !important;
+            flex-direction: column;
+            margin-left: 20px;
+            color: #7a63a0;
+            font-family: 'AvenirBlack';
+            span {
+              margin-left: auto;
+              font-size: 1.8rem;
+              margin-top: -10px;
+              font-family: 'AvenirMedium';
+            }
+           
+          }
+          a {
+            margin-right: 5px;
+            width: 170px;
+            height: 44px;
+            background-color: #7a63a0;
+            color: #fff;
+            font-size: 2rem;
+            border-radius: 22px 22px 5px  22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+  .sepet-sidebar {
+    width: 310px;
+    height: auto;
+    background-color: #4b3969;
+    border-radius: 15px 80px 80px 15px;
+    overflow: hidden;
+    padding-bottom: 60px;
+    h3 {
+      background-color: #7a63a0;
+      height: 75px;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-family: 'AvenirBlack';
+    }
+    ul {
+      li {
+        padding-left: 20px;
+        a {
+          font-size: 1.4rem;
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .para-birimi {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      a {
+        width: 130px;
+        height: 35px;
+        background-color: #634e85;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-family: 'AvenirBlack';
+        opacity: .4;
+        &.active-birim {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1170px) {
+
+  html {
+    font-size: 9px;
+  }
+  .page-links {
+    width: 90%;
+    justify-content: flex-start !important;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    a {
+      flex: 0 0 auto;
+    }
+  }
+
+  .content-box {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 70px !important;
+    margin-top: -140px;
+    background-color: #fff;
+    box-shadow: 0px 0px 60px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+
+
+
+
+
+
+/* SEPET ADIM 1 (PAKET SECİM) */
+  .sepet {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    .sepet-content {
+      flex: 1;
+      margin-right: 0px;
+      margin-left: 0px;
+      .content-title {
+        font-size: 2.2rem;
+        font-family: 'AvenirBlack';
+        color: $purple;
+      }
+      .content-summary {
+        font-size: 1.4rem;
+        color: $purple;
+        opacity: 0.6;
+        margin-top: 0px;
+        text-align: left ;
+      }
+  
+  
+      .sepet-paketler {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        .sepet-paket-item {
+          width: 100%;
+          margin-bottom: 30px;
+          height: auto;
+          border-radius: 15px;
+          background-color: #f8f8f8;
+          overflow: hidden;
+          h3 {
+            background-color: #ecebef;
+            color: #7a63a0;
+            min-height: 38px !important;
+            height: auto !important;
+            font-size: 1.6rem;
+            line-height: 40px;
+            padding-left: 20px;
+            font-family: 'AvenirBlack';
+          }
+          .paket-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            p {
+              display: flex;
+              font-size: 2.2rem !important;
+              flex-direction: column;
+              margin-left: 20px;
+              color: #7a63a0;
+              font-family: 'AvenirBlack';
+              span {
+                margin-left: auto;
+                font-size: 1.8rem;
+                margin-top: -10px;
+                font-family: 'AvenirMedium';
+              }
+             
+            }
+            a {
+              width: 120px;
+              height: 40px;
+            }
+          }
+        }
+      }
+  
+  
+    }
+  
+  
+
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+} // media query end!

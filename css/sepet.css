@@ -1,0 +1,517 @@
+@charset "UTF-8";
+.main-slider {
+  min-width: 100%;
+  height: 374px;
+  background-color: #b2b2b2;
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-slider .slider-overlay .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-slider .slider-overlay .container .page-title {
+  font-family: 'Exo';
+  font-size: 4.8rem;
+  color: #fff;
+  margin-top: -70px;
+}
+
+.main-slider .slider-overlay .container .page-links {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.main-slider .slider-overlay .container .page-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  height: 50px;
+  width: 180px;
+  margin: 0 8px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  border-style: dashed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-slider .slider-overlay .container .page-links a.active-sepet-link {
+  -webkit-box-shadow: 0px 0px 44px rgba(255, 255, 255, 0.93) !important;
+          box-shadow: 0px 0px 44px rgba(255, 255, 255, 0.93) !important;
+}
+
+.main-slider .slider-overlay .container .page-links a:first-child {
+  background-color: #a28ec2;
+}
+
+.main-slider .slider-overlay .container .page-links a:nth-child(2) {
+  background-color: #7a63a0;
+}
+
+.main-slider .slider-overlay .container .page-links a:nth-child(3) {
+  background-color: #4b3969;
+}
+
+.main-slider .slider-overlay .container .page-links a:nth-child(4) {
+  background-color: #2d0452;
+}
+
+.main-slider .slider-overlay .container .page-links a:last-child {
+  background-color: #0f011a;
+}
+
+.container .content-box {
+  width: 100%;
+  min-height: 330px;
+  border-radius: 100px;
+  margin-top: -140px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+}
+
+.container .content-box .content-title {
+  font-size: 2.6rem;
+  font-family: 'AvenirBlack';
+  color: #2d0452;
+}
+
+.container .content-box .content-summary {
+  font-size: 1.6rem;
+  color: #2d0452;
+  opacity: 0.6;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.container .content-box .page-content {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #000;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.bottom-banner {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  margin-top: 90px;
+  background-image: url(../images/mutlumusteri2.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
+}
+
+.bottom-banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-banner .container .banner-text {
+  font-size: 3.6rem;
+  color: #fff;
+  text-shadow: 0px 0px 15px black;
+  font-family: 'AvenirBlack';
+}
+
+/* SEPET ADIM 1 (PAKET SECİM) */
+.sepet {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.sepet .sepet-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 40px;
+  margin-left: 20px;
+}
+
+.sepet .sepet-content .content-title {
+  font-size: 2.6rem;
+  font-family: 'AvenirBlack';
+  color: #2d0452;
+}
+
+.sepet .sepet-content .content-summary {
+  font-size: 1.6rem;
+  color: #2d0452;
+  opacity: 0.6;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.sepet .sepet-content .sepet-paketler {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sepet .sepet-content .sepet-paketler .sepet-paket-item {
+  width: 350px;
+  margin-bottom: 30px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.sepet .sepet-content .sepet-paketler .sepet-paket-item h3 {
+  background-color: #ecebef;
+  color: #7a63a0;
+  height: 38px;
+  font-size: 1.6rem;
+  line-height: 40px;
+  padding-left: 20px;
+  font-family: 'AvenirBlack';
+}
+
+.sepet .sepet-content .sepet-paketler .sepet-paket-item ul {
+  padding: 15px;
+  list-style-type: disc !important;
+}
+
+.sepet .sepet-content .sepet-paketler .sepet-paket-item ul li {
+  font-size: 1.4rem;
+  list-style-type: disc !important;
+  margin-left: 20px;
+  margin-bottom: 2px;
+  color: #323232;
+}
+
+.sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.2rem !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  color: #7a63a0;
+  font-family: 'AvenirBlack';
+}
+
+.sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom p span {
+  margin-left: auto;
+  font-size: 1.8rem;
+  margin-top: -10px;
+  font-family: 'AvenirMedium';
+}
+
+.sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom a {
+  margin-right: 5px;
+  width: 170px;
+  height: 44px;
+  background-color: #7a63a0;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 22px 22px 5px  22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sepet .sepet-sidebar {
+  width: 310px;
+  height: auto;
+  background-color: #4b3969;
+  border-radius: 15px 80px 80px 15px;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.sepet .sepet-sidebar h3 {
+  background-color: #7a63a0;
+  height: 75px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: 'AvenirBlack';
+}
+
+.sepet .sepet-sidebar ul li {
+  padding-left: 20px;
+}
+
+.sepet .sepet-sidebar ul li a {
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.sepet .sepet-sidebar .para-birimi {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sepet .sepet-sidebar .para-birimi a {
+  width: 130px;
+  height: 35px;
+  background-color: #634e85;
+  border-radius: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: 'AvenirBlack';
+  opacity: .4;
+}
+
+.sepet .sepet-sidebar .para-birimi a.active-birim {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1170px) {
+  html {
+    font-size: 9px;
+  }
+  .page-links {
+    width: 90%;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin-top: 20px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .page-links::-webkit-scrollbar {
+    display: none;
+  }
+  .page-links a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .content-box {
+    width: 100%;
+    min-height: 330px;
+    border-radius: 70px !important;
+    margin-top: -140px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0px;
+  }
+  /* SEPET ADIM 1 (PAKET SECİM) */
+  .sepet {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sepet .sepet-content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .sepet .sepet-content .content-title {
+    font-size: 2.2rem;
+    font-family: 'AvenirBlack';
+    color: #2d0452;
+  }
+  .sepet .sepet-content .content-summary {
+    font-size: 1.4rem;
+    color: #2d0452;
+    opacity: 0.6;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .sepet .sepet-content .sepet-paketler {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .sepet .sepet-content .sepet-paketler .sepet-paket-item {
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+  }
+  .sepet .sepet-content .sepet-paketler .sepet-paket-item h3 {
+    background-color: #ecebef;
+    color: #7a63a0;
+    min-height: 38px !important;
+    height: auto !important;
+    font-size: 1.6rem;
+    line-height: 40px;
+    padding-left: 20px;
+    font-family: 'AvenirBlack';
+  }
+  .sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2.2rem !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+    color: #7a63a0;
+    font-family: 'AvenirBlack';
+  }
+  .sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom p span {
+    margin-left: auto;
+    font-size: 1.8rem;
+    margin-top: -10px;
+    font-family: 'AvenirMedium';
+  }
+  .sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom a {
+    width: 120px;
+    height: 40px;
+  }
+}
+/*# sourceMappingURL=sepet.css.map */
