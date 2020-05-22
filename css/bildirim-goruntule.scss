@@ -1,0 +1,290 @@
+$darkPurple: #0f011a;
+$purple: #2d0452;
+$red: #ff2a00;
+$yellow: #ffaf00;
+$blue: #00baff;
+$gray: #b2b2b2;
+
+
+.bildirim-goruntule-box {
+  border-radius: 100px !important;
+  padding: 20px 0 150px 0 !important;
+  .page-content {
+    width: 100% !important; 
+  }
+}
+
+
+
+.bildirim-goruntule {
+  display: flex;
+  width: 100%;
+  height: auto;
+
+  .bildirim-sidebar {
+    width: 306px;
+    height: auto; 
+
+    .bildirim-detay {
+      width: 100%;
+      height: auto;
+      margin-bottom: 12px;
+      h3 {
+        width: 100%;
+        height: 80px;
+        background-color: #55386e;
+        color: #fff;
+        font-family: 'AvenirBlack';
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        border-top-right-radius: 20px;
+        border: 1px solid #51336b;
+      }
+      .detay-form {
+        padding: 0 !important;
+      }
+      .detay-item {
+        width: 100%;
+        height: 74px;
+        background-color: #664c7c;
+        padding-left: 40px;
+        border-bottom: 1px solid #9482a4;
+        font-size: 1.8rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        a {
+          font-size: 1.8rem;
+        color: #fff;
+        }
+        p {
+          margin-bottom: -7px;
+        }
+        span {
+          font-family: 'AvenirBlack';
+          &.success {
+            color: #48c621;
+          }
+        }
+        form {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          input {
+            width: 200px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            color: #55386e;
+            font-size: 1.6rem;
+            border: none;
+            text-indent: 12px;
+            margin-right: 14px;
+            &::placeholder {
+              color: #55386e;
+            }
+          }
+          button {
+            width: 60px;
+            height: 40px;
+            border-radius: 8px;
+            color: #55386e;
+            font-size: 1.5rem;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+      .detay-buttons {
+        width: 100%;
+        height: 80px;
+        background-color: #664c7c;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .yanitla,
+        .bildirim-kapat {
+          width: 135px;
+          height: 45px;
+          background-color: #fff;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'AvenirBlack';
+        }
+        .yanitla {
+          font-size: 2rem;
+          color: #48c621;
+        }
+        .bildirim-kapat {
+          font-size: 1.7rem;
+          color: #000;
+        }
+      }
+    }
+
+
+  }
+
+  .bildirim-yanitlar {
+    margin: 0 20px;
+    flex: 1;
+
+    .yanitla-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background-color: $purple;
+      color: #fff;
+      height: 80px;
+      border-top-right-radius: 20px;
+      padding: 0 40px;
+      margin-bottom: 12px;
+      h3 {
+        font-family: 'AvenirBlack';
+      }
+    }
+
+    .yanit-box {
+      margin-bottom: 12px;
+
+      &:nth-child(odd) {
+        .yanit-head {
+          background-color: #939394;
+        }
+        .yanit-icerik {
+          background-color: #dbdbdb;
+        }
+      }
+
+      .yanit-head {
+        width: 100%;
+        height: 48px;
+        background-color: #816897;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 1.6rem;
+        .user {
+          span {
+            margin-left: 10px;
+            font-family: 'AvenirBlack';
+            font-size: 1.6rem;
+          }
+        }
+        .yanit-stars {
+          font-size: 2rem;
+        }
+      }
+      .yanit-icerik {
+        background-color: #d5cddc;
+        color: #000;
+        padding: 20px;
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    } 
+
+
+  }
+
+}
+
+
+
+
+@media only screen and (max-width: 1170px) {
+
+
+
+
+
+  .bildirim-goruntule {
+    flex-direction: column;
+    align-items: center;
+  
+    .bildirim-sidebar {
+      width: 100%;
+      padding: 0 20px;
+      height: auto; 
+  
+      .bildirim-detay {
+        .detay-buttons {
+          .yanitla,
+          .bildirim-kapat {
+            width: 130px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'AvenirBlack';
+          }
+
+          .bildirim-kapat {
+            font-size: 1.5rem;
+            color: #000;
+          }
+        }
+      }
+    }
+  
+    .bildirim-yanitlar {
+
+      .yanit-box {
+        .yanit-head {
+          width: 100%;
+          height: auto;
+          background-color: #816897;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0 20px;
+          font-size: 1.6rem;
+          .user {
+            span {
+              margin-left: 10px;
+              font-family: 'AvenirBlack';
+              font-size: 1.6rem;
+            }
+          }
+          .yanit-stars {
+            font-size: 2rem;
+          }
+        }
+        .yanit-icerik {
+          background-color: #d5cddc;
+          color: #000;
+          padding: 20px;
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      } 
+  
+  
+    }
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+} // media query end!

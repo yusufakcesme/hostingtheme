@@ -1,0 +1,333 @@
+.bildirim-goruntule-box {
+  border-radius: 100px !important;
+  padding: 20px 0 150px 0 !important;
+}
+
+.bildirim-goruntule-box .page-content {
+  width: 100% !important;
+}
+
+.bildirim-goruntule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.bildirim-goruntule .bildirim-sidebar {
+  width: 306px;
+  height: auto;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay h3 {
+  width: 100%;
+  height: 80px;
+  background-color: #55386e;
+  color: #fff;
+  font-family: 'AvenirBlack';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+  border-top-right-radius: 20px;
+  border: 1px solid #51336b;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-form {
+  padding: 0 !important;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item {
+  width: 100%;
+  height: 74px;
+  background-color: #664c7c;
+  padding-left: 40px;
+  border-bottom: 1px solid #9482a4;
+  font-size: 1.8rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item a {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item p {
+  margin-bottom: -7px;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item span {
+  font-family: 'AvenirBlack';
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item span.success {
+  color: #48c621;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item form input {
+  width: 200px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #55386e;
+  font-size: 1.6rem;
+  border: none;
+  text-indent: 12px;
+  margin-right: 14px;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item form input::-webkit-input-placeholder {
+  color: #55386e;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item form input:-ms-input-placeholder {
+  color: #55386e;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item form input::-ms-input-placeholder {
+  color: #55386e;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item form input::placeholder {
+  color: #55386e;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-item form button {
+  width: 60px;
+  height: 40px;
+  border-radius: 8px;
+  color: #55386e;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-buttons {
+  width: 100%;
+  height: 80px;
+  background-color: #664c7c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-buttons .yanitla,
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-buttons .bildirim-kapat {
+  width: 135px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'AvenirBlack';
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-buttons .yanitla {
+  font-size: 2rem;
+  color: #48c621;
+}
+
+.bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-buttons .bildirim-kapat {
+  font-size: 1.7rem;
+  color: #000;
+}
+
+.bildirim-goruntule .bildirim-yanitlar {
+  margin: 0 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanitla-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #2d0452;
+  color: #fff;
+  height: 80px;
+  border-top-right-radius: 20px;
+  padding: 0 40px;
+  margin-bottom: 12px;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanitla-title h3 {
+  font-family: 'AvenirBlack';
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanit-box {
+  margin-bottom: 12px;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanit-box:nth-child(odd) .yanit-head {
+  background-color: #939394;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanit-box:nth-child(odd) .yanit-icerik {
+  background-color: #dbdbdb;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-head {
+  width: 100%;
+  height: 48px;
+  background-color: #816897;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  font-size: 1.6rem;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-head .user span {
+  margin-left: 10px;
+  font-family: 'AvenirBlack';
+  font-size: 1.6rem;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-head .yanit-stars {
+  font-size: 2rem;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-icerik {
+  background-color: #d5cddc;
+  color: #000;
+  padding: 20px;
+}
+
+.bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-icerik p {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1170px) {
+  .bildirim-goruntule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bildirim-goruntule .bildirim-sidebar {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-buttons .yanitla,
+  .bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-buttons .bildirim-kapat {
+    width: 130px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'AvenirBlack';
+  }
+  .bildirim-goruntule .bildirim-sidebar .bildirim-detay .detay-buttons .bildirim-kapat {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  .bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-head {
+    width: 100%;
+    height: auto;
+    background-color: #816897;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px;
+    font-size: 1.6rem;
+  }
+  .bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-head .user span {
+    margin-left: 10px;
+    font-family: 'AvenirBlack';
+    font-size: 1.6rem;
+  }
+  .bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-head .yanit-stars {
+    font-size: 2rem;
+  }
+  .bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-icerik {
+    background-color: #d5cddc;
+    color: #000;
+    padding: 20px;
+  }
+  .bildirim-goruntule .bildirim-yanitlar .yanit-box .yanit-icerik p {
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=bildirim-goruntule.css.map */
