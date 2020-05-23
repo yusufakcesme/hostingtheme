@@ -368,6 +368,407 @@
   opacity: 1;
 }
 
+.sepet .sepet-sidebar .siparis-ozeti {
+  margin: 15px 0px;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0 20px;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti p span b {
+  font-family: sans-serif;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti hr {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: #817596;
+  border: none;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti .total-price {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5d4d78;
+  padding: 5px 0;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti .total-price p {
+  font-size: 1.5rem;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti .total-price span {
+  font-family: 'AvenirBlack';
+  font-size: 3rem;
+  color: #fff;
+  margin-top: -5px;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti .total-price span b {
+  font-family: sans-serif;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti .continue {
+  width: 220px;
+  height: 40px;
+  background-color: #fff;
+  color: #4b3969;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+  font-family: 'AvenirBlack';
+  font-size: 1.8rem;
+  border-radius: 0 10px 20px 10px;
+  margin-bottom: -40px;
+}
+
+.sepet .sepet-sidebar .siparis-ozeti .continue .fa-chevron-right {
+  margin-left: 10px;
+}
+
+.sepet-labels {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 20px;
+}
+
+.sepet-labels .sepet-option {
+  width: 100%;
+  min-height: 110px !important;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sepet-labels .sepet-option .yeni-kayit {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sepet-labels .sepet-option .yeni-kayit p {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .mevcut-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .mevcut-input input {
+  width: 300px;
+  height: 45px;
+  background-color: #e6e5e9;
+  border-radius: 25px 0px 25px 0;
+  border: none;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .mevcut-input input::-webkit-input-placeholder {
+  color: #929194;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .mevcut-input input:-ms-input-placeholder {
+  color: #929194;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .mevcut-input input::-ms-input-placeholder {
+  color: #929194;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .mevcut-input input::placeholder {
+  color: #929194;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .mevcut-input > p {
+  margin-left: 20px;
+  width: 80px;
+  height: 45px;
+  background-color: #e6e5e9;
+  border-radius: 25px 25px 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8rem;
+  color: #7a63a0;
+  font-family: 'AvenirBlack';
+}
+
+.sepet-labels .sepet-option .yeni-kayit .mevcut-input .kullan {
+  margin-left: 20px;
+  width: 170px;
+  height: 45px;
+  border-radius: 45px;
+  background-color: #7a63a0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .alanadi-input {
+  width: 400px;
+  height: 45px;
+  background-color: #e6e5e9;
+  border-radius: 45px 45px 45px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .alanadi-input input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .alanadi-input input::-webkit-input-placeholder {
+  color: #929194;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .alanadi-input input:-ms-input-placeholder {
+  color: #929194;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .alanadi-input input::-ms-input-placeholder {
+  color: #929194;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .alanadi-input input::placeholder {
+  color: #929194;
+}
+
+.sepet-labels .sepet-option .yeni-kayit .kontrol-et {
+  margin-left: auto;
+  width: 170px;
+  height: 45px;
+  border-radius: 45px;
+  background-color: #7a63a0;
+  color: #fff;
+  margin-top: -45px;
+  margin-right: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* CUSTOM CHECKBOX STYLES */
+/* The container */
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: 'AvenirBlack';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  height: 80px;
+  color: #080113;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input.secenek {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 25px;
+  border: 3px solid #2d0452;
+  margin-top: 0px;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input.secenek ~ .checkmark-check {
+  background-color: #2d0452;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input.secenek:checked ~ .checkmark-check {
+  background-color: #2d0452;
+}
+
+/* Create the checkmark-check/indicator (hidden when not checked) */
+.checkmark-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark-check when checked */
+.container-check input.secenek:checked ~ .checkmark-check:after {
+  display: block;
+}
+
+/* Style the checkmark-check/indicator */
+.container-check .checkmark-check:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #2d0452;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/************************ CUSTOM SELECT *************************/
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  margin-right: 30px;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  height: 100%;
+  margin-bottom: 7px;
+  color: #4b3969 !important;
+  font-family: 'AvenirBlack';
+}
+
+.custom-select::after {
+  content: '';
+  border: solid #4b3969;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 13px;
+  right: -18px;
+  position: absolute;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: #fff;
+  height: 30px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #4b3969;
+  width: 90px;
+  border-radius: 20px 20px 100px 100px;
+  top: 100%;
+  right: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99;
+  padding-bottom: 15px;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
 @media only screen and (max-width: 1170px) {
   html {
     font-size: 9px;
