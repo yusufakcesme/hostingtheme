@@ -599,14 +599,295 @@ $gray: #b2b2b2;
 
 
 
+/* SEPET YAPILANDIRMA SAYFASI (3. ADIM) */
+.siparis-detaylari {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  .siparis-detay-box {
+    width: 230px;
+    min-height: 265px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    .detay-price {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #dfdfdf;
+      border-radius: 0 0 15px 15px;
+      margin-top: auto;
+      color: $purple;
+      font-family: 'AvenirBlack';
+    }
+
+    ul {
+      text-align: center;
+      margin-bottom: 10px;
+      li {
+        font-size: 1.6rem;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: #000;
+      font-family: 'AvenirBlack';
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+
+.yapilandirma-secenekleri {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    background-color:rgba(255,255,255,.1);
+    box-shadow: 0px 0px 24px rgba(0,0,0,.1);
+    border-radius: 20px;
+    top: 0;
+    left:  0;
+    padding: 60px;
+    margin-top: 20px;
+    z-index: -9 !important;
+    display: flex;
+    .inner {
+      width: 100%;
+      height: auto;
+      display: flex;
+      .ayarlanabilir {
+        width: 300px;
+        h3 {
+          font-size: 2.4rem;
+          color: $purple;
+          font-family: 'AvenirBlack';
+          margin-bottom: 10px;
+        }
+        .secenek-label {
+          p {
+            font-size: 1.8rem;
+          }
+          
+        }
+      }
+      .kullanılabilir {
+        flex: 1;
+        margin-left: 50px;
+        border: 1px solid red;
+        h3 {
+          font-size: 2.4rem;
+          color: $purple;
+          font-family: 'AvenirBlack';
+          margin-bottom: 10px;
+        }
+      }
+    }
+}
 
 
 
 
+// CUSTOM SELECT BOX --------------------------------
+.select-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 1.8rem;
+  color: #60666d;
+ 
+  
+  
+  &__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    
+    &:focus {
+      & + .select-box__list {
+        opacity: 1;
+
+        animation-name: none;
+        
+        .select-box__option {
+          cursor: pointer;
+        }
+      }
+      
+      .select-box__icon {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+  
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 1;
+    transition: 0.2s ease;
+    color: #000;
+  }
+  
+  &__value {
+    display: flex;
+  }
+  
+  &__input {
+    display: none;
+    
+    &:checked + .select-box__input-text {
+      display: block;
+    }
+  }
+  
+  &__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    color: $purple;
+    background-color: #eee;
+    border-radius: 10px;
+  }
+  
+  &__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    z-index: 99;
+    
+    // We need to use animation with delay.
+    // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.
+    // This delay will not be noticed because we set "opacity" to "0".
+    // We also use "animation-fill-mode: forwards" to make the list stay hidden.
+    
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+  }
+  
+  &__option {
+    display: block;
+    padding: 15px;
+    background-color: #eee;
+    color: $purple;
+    
+    &:hover,
+    &:focus {
+      color: #546c84;
+      background-color: #fbfbfb;
+    }
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
 
 
 
+/* EKLENTİ YAPILANDIRMA CUSTOM CHECKBOX STYLES */
 
+
+/* The container */
+.container-check-eklenti {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px; 
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: 'AvenirBlack';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  height: 80px;
+  color: #080113;
+}
+
+/* Hide the browser's default checkbox */
+.container-check-eklenti input.eklenti{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-check-eklenti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 7px;
+  border: 3px solid $purple;
+  margin-top: 0px;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check-eklenti:hover input.eklenti~ .checkmark-check-eklenti {
+  background-color: $purple;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check-eklenti input.eklenti:checked ~ .checkmark-check-eklenti {
+  background-color: $purple;
+}
+
+/* Create the checkmark-check/indicator (hidden when not checked) */
+.checkmark-check-eklenti:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark-check when checked */
+.container-check-eklenti input.eklenti:checked ~ .checkmark-check-eklenti:after {
+  display: block;
+}
+
+/* Style the checkmark-check/indicator */
+.container-check-eklenti .checkmark-check-eklenti:after {
+  left: 6px;
+  top: 1.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 
 

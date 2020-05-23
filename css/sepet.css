@@ -769,6 +769,330 @@
   display: none;
 }
 
+/* SEPET YAPILANDIRMA SAYFASI (3. ADIM) */
+.siparis-detaylari {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.siparis-detaylari .siparis-detay-box {
+  width: 230px;
+  min-height: 265px;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.siparis-detaylari .siparis-detay-box .detay-price {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #dfdfdf;
+  border-radius: 0 0 15px 15px;
+  margin-top: auto;
+  color: #2d0452;
+  font-family: 'AvenirBlack';
+}
+
+.siparis-detaylari .siparis-detay-box ul {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.siparis-detaylari .siparis-detay-box ul li {
+  font-size: 1.6rem;
+}
+
+.siparis-detaylari .siparis-detay-box h3 {
+  font-size: 2rem;
+  color: #000;
+  font-family: 'AvenirBlack';
+  margin-bottom: 10px;
+}
+
+.yapilandirma-secenekleri {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  padding: 60px;
+  margin-top: 20px;
+  z-index: -9 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.yapilandirma-secenekleri .inner {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.yapilandirma-secenekleri .inner .ayarlanabilir {
+  width: 300px;
+}
+
+.yapilandirma-secenekleri .inner .ayarlanabilir h3 {
+  font-size: 2.4rem;
+  color: #2d0452;
+  font-family: 'AvenirBlack';
+  margin-bottom: 10px;
+}
+
+.yapilandirma-secenekleri .inner .ayarlanabilir .secenek-label p {
+  font-size: 1.8rem;
+}
+
+.yapilandirma-secenekleri .inner .kullanılabilir {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 50px;
+  border: 1px solid red;
+}
+
+.yapilandirma-secenekleri .inner .kullanılabilir h3 {
+  font-size: 2.4rem;
+  color: #2d0452;
+  font-family: 'AvenirBlack';
+  margin-bottom: 10px;
+}
+
+.select-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 1.8rem;
+  color: #60666d;
+}
+
+.select-box__current {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.select-box__current:focus + .select-box__list {
+  opacity: 1;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
+.select-box__current:focus + .select-box__list .select-box__option {
+  cursor: pointer;
+}
+
+.select-box__current:focus .select-box__icon {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  opacity: 1;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #000;
+}
+
+.select-box__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.select-box__input {
+  display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+  display: block;
+}
+
+.select-box__input-text {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  color: #2d0452;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.select-box__list {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  z-index: 99;
+  -webkit-animation-name: HideList;
+          animation-name: HideList;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
+  -webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.select-box__option {
+  display: block;
+  padding: 15px;
+  background-color: #eee;
+  color: #2d0452;
+}
+
+.select-box__option:hover, .select-box__option:focus {
+  color: #546c84;
+  background-color: #fbfbfb;
+}
+
+@-webkit-keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+/* EKLENTİ YAPILANDIRMA CUSTOM CHECKBOX STYLES */
+/* The container */
+.container-check-eklenti {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: 'AvenirBlack';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  height: 80px;
+  color: #080113;
+}
+
+/* Hide the browser's default checkbox */
+.container-check-eklenti input.eklenti {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-check-eklenti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 7px;
+  border: 3px solid #2d0452;
+  margin-top: 0px;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check-eklenti:hover input.eklenti ~ .checkmark-check-eklenti {
+  background-color: #2d0452;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check-eklenti input.eklenti:checked ~ .checkmark-check-eklenti {
+  background-color: #2d0452;
+}
+
+/* Create the checkmark-check/indicator (hidden when not checked) */
+.checkmark-check-eklenti:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark-check when checked */
+.container-check-eklenti input.eklenti:checked ~ .checkmark-check-eklenti:after {
+  display: block;
+}
+
+/* Style the checkmark-check/indicator */
+.container-check-eklenti .checkmark-check-eklenti:after {
+  left: 6px;
+  top: 1.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 @media only screen and (max-width: 1170px) {
   html {
     font-size: 9px;
