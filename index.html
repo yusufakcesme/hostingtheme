@@ -480,16 +480,40 @@
 
   <div class="main-tabs">
     <div class="tab-links">
-      <button type="button">Neden Biz?</button>
-      <button class="active-tab" type="button">Kesintisiz Destek</button>
-      <button type="button">Neden Biz?</button>
+      <button class="main-tab-btn active-tab" type="button" id="tab-btn-1">Neden Biz?</button>
+      <button class="main-tab-btn" type="button" id="tab-btn-2">Kesintisiz Destek</button>
+      <button class="main-tab-btn" type="button" id="tab-btn-3">Neden Biz?</button>
     </div>
 
-    <div class="tab-banner">
+    <div class="tab-banner banner-1 active-main-tab">
+      <div class="container">
+        <div class="tab-banner-text">
+          <img src="images/icons/server.png" alt="">
+          <h1>Neden Biz 1 ?</h1>
+          <p>Bir çok blog web sitesi ve haber web sitesi kaliteli hosting, sunucu paketlerimiz üzerinden yayın
+            yapmaktadır. Sunucularımız ve ekonomik hosting paketlerimiz yüksek performansta çalışmak üzere optimize
+            edilmiştir.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-banner banner-2">
       <div class="container">
         <div class="tab-banner-text">
           <img src="images/icons/server.png" alt="">
           <h1>Kesintisiz Destek</h1>
+          <p>Bir çok blog web sitesi ve haber web sitesi kaliteli hosting, sunucu paketlerimiz üzerinden yayın
+            yapmaktadır. Sunucularımız ve ekonomik hosting paketlerimiz yüksek performansta çalışmak üzere optimize
+            edilmiştir.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-banner banner-3">
+      <div class="container">
+        <div class="tab-banner-text">
+          <img src="images/icons/server.png" alt="">
+          <h1>Neden Biz 2 ?</h1>
           <p>Bir çok blog web sitesi ve haber web sitesi kaliteli hosting, sunucu paketlerimiz üzerinden yayın
             yapmaktadır. Sunucularımız ve ekonomik hosting paketlerimiz yüksek performansta çalışmak üzere optimize
             edilmiştir.</p>
@@ -792,6 +816,30 @@
       }
 
     });
+
+
+
+
+    // anasayfa neden biz? tab js
+
+
+
+
+
+    $('.main-tab-btn').on('click', function () {
+      $('.main-tab-btn').removeClass('active-tab')
+      $(this).addClass('active-tab')
+      if ($(this).attr("id") === "tab-btn-1") {
+        $('.tab-banner').removeClass('active-main-tab')
+        $('.banner-1').addClass('active-main-tab')
+      } else if ($(this).attr("id") === "tab-btn-2") {
+        $('.tab-banner').removeClass('active-main-tab')
+        $('.banner-2').addClass('active-main-tab')
+      } else if ($(this).attr("id") === "tab-btn-3") {
+        $('.tab-banner').removeClass('active-main-tab')
+        $('.banner-3').addClass('active-main-tab')
+      }
+    })
 
 
   </script>

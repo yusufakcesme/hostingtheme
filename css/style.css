@@ -1226,12 +1226,17 @@ header .container .header-buttons .mobile-menu-button {
   color: #fff;
 }
 
+.main-tabs .active-main-tab {
+  display: block !important;
+}
+
 .main-tabs .tab-banner {
   width: 100%;
   height: 360px;
   overflow: hidden;
   background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
+  display: none;
 }
 
 .main-tabs .tab-banner .container {
