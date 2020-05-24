@@ -55,6 +55,11 @@
   z-index: 5;
 }
 
+.panel-options .disable-rotate:hover .flip-card-inner {
+  -webkit-transform: rotateY(0deg) !important;
+          transform: rotateY(0deg) !important;
+}
+
 .panel-options .flip-card-inner {
   position: relative;
   width: 100%;
@@ -110,6 +115,13 @@
   font-size: 2.4rem;
   font-family: 'AvenirLight';
   margin-top: 15px;
+}
+
+.panel-options .flip-card-front a {
+  font-size: 2.4rem;
+  font-family: 'AvenirLight';
+  margin-top: 15px;
+  color: #fff;
 }
 
 .panel-options .flip-card-back {

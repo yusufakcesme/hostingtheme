@@ -50,6 +50,10 @@ $gray: #b2b2b2;
       z-index: 5;
     }
   }
+
+  .disable-rotate:hover .flip-card-inner {
+    transform: rotateY(0deg) !important;
+  }
   
   .flip-card-inner {
     position: relative;
@@ -89,6 +93,12 @@ $gray: #b2b2b2;
       font-size: 2.4rem;
       font-family: 'AvenirLight';
       margin-top: 15px;
+    }
+    a {
+      font-size: 2.4rem;
+      font-family: 'AvenirLight';
+      margin-top: 15px;
+      color: #fff;
     }
   
   }
@@ -503,9 +513,6 @@ $gray: #b2b2b2;
   }
 
 
-
-
-  
 .panel-options {
   flex: 2.2;
   display: flex;
@@ -514,6 +521,7 @@ $gray: #b2b2b2;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 20px;
+
 
   .flip-card {
     width: 155px;
@@ -555,6 +563,8 @@ $gray: #b2b2b2;
     transform: rotateY(180deg);
   }
   
+
+
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
