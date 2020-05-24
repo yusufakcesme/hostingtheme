@@ -886,7 +886,6 @@
       -ms-flex: 1;
           flex: 1;
   margin-left: 50px;
-  border: 1px solid red;
 }
 
 .yapilandirma-secenekleri .inner .kullanılabilir h3 {
@@ -1019,22 +1018,78 @@
 }
 
 /* EKLENTİ YAPILANDIRMA CUSTOM CHECKBOX STYLES */
+.eklentiler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.eklenti-box {
+  margin-bottom: 20px;
+}
+
 /* The container */
 .container-check-eklenti {
-  display: block;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   padding-left: 35px;
   margin-bottom: 0px;
   cursor: pointer;
-  font-size: 2rem;
   font-family: 'AvenirBlack';
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 40px;
-  height: 80px;
+  width: 300px;
+  height: 45px;
+  background-color: #eee;
+  border-radius: 10px;
   color: #080113;
+}
+
+.container-check-eklenti > p {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  font-family: 'AvenirMedium';
+}
+
+.container-check-eklenti > span.pricing {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  height: 100%;
+  font-size: 1.4rem;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  font-family: 'AvenirMedium';
+}
+
+.label-bottom-text {
+  margin: 5px;
+  max-width: 300px;
+  font-size: 1.2rem;
 }
 
 /* Hide the browser's default checkbox */
@@ -1056,7 +1111,9 @@
   background-color: #eee;
   border-radius: 7px;
   border: 3px solid #2d0452;
-  margin-top: 0px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* On mouse-over, add a grey background color */
@@ -1237,6 +1294,67 @@
   .sepet .sepet-content .sepet-paketler .sepet-paket-item .paket-bottom a {
     width: 120px;
     height: 40px;
+  }
+  /* SEPET YAPILANDIRMA SAYFASI (3. ADIM) */
+  .siparis-detaylari {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .siparis-detaylari .siparis-detay-box {
+    width: 100%;
+  }
+  .yapilandirma-secenekleri {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    margin-top: 20px;
+    z-index: -9 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .yapilandirma-secenekleri .inner {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .yapilandirma-secenekleri .inner .ayarlanabilir {
+    width: 300px;
+  }
+  .yapilandirma-secenekleri .inner .ayarlanabilir h3 {
+    font-size: 2.4rem;
+    color: #2d0452;
+    font-family: 'AvenirBlack';
+    margin-bottom: 10px;
+  }
+  .yapilandirma-secenekleri .inner .ayarlanabilir .secenek-label p {
+    font-size: 1.8rem;
+  }
+  .yapilandirma-secenekleri .inner .kullanılabilir {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 0px;
+  }
+  .yapilandirma-secenekleri .inner .kullanılabilir h3 {
+    font-size: 2.4rem;
+    color: #2d0452;
+    font-family: 'AvenirBlack';
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=sepet.css.map */
