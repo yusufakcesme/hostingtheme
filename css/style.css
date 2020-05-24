@@ -136,6 +136,7 @@ header .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 header .container .logo {
@@ -144,10 +145,41 @@ header .container .logo {
   color: #2d0452;
 }
 
-header .container nav a {
+header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container ul li {
+  height: 90px !important;
+  line-height: 90px;
+}
+
+header .container ul li.active-header-nav {
+  background-color: #846b99;
+}
+
+header .container ul li.active-header-nav a {
+  color: #fff;
+}
+
+header .container ul li a {
   font-size: 1.6rem;
   color: #0f011a;
   margin: 0 25px;
+}
+
+header .container ul li .nav-dropdown {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 200px;
+  background-color: #846b99;
+  z-index: 9999;
+  border-radius: 0 0 40px 40px;
+  -webkit-box-shadow: -16px 0px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: -16px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 header .container .header-buttons {
@@ -1862,7 +1894,7 @@ footer > .container .footer-links .footer-form button {
     font-weight: bolder;
     color: #2d0452;
   }
-  header .container nav {
+  header .container ul {
     display: none;
   }
   header .container .header-buttons {

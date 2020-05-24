@@ -120,16 +120,38 @@ header {
     align-items: center;
     height: 100%;
     justify-content: space-between;
+    position: relative;
     .logo {
       font-size: 4.8rem;
       font-weight: bolder;
       color: $purple;
     }
-    nav {
-      a {
-        font-size: 1.6rem;
-        color: $darkPurple;
-        margin: 0 25px;
+    ul {
+      display: flex;
+      li {
+        height: 90px !important;
+        line-height: 90px;
+        &.active-header-nav {
+          background-color: #846b99;
+          a {
+            color: #fff;
+          }
+        }
+        a {
+          font-size: 1.6rem;
+          color: $darkPurple;
+          margin: 0 25px;
+        }
+        .nav-dropdown {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          height: 200px;
+          background-color: #846b99;
+          z-index: 9999;
+          border-radius: 0 0 40px 40px;
+          box-shadow: -16px 0px 20px rgba(0,0,0,.5);
+        }
       }
     }
     .header-buttons {
@@ -1435,7 +1457,7 @@ header {
       font-weight: bolder;
       color: $purple;
     }
-    nav {
+    ul {
       display: none;
     }
     .header-buttons {
