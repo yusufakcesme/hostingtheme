@@ -92,9 +92,48 @@ $gray: #b2b2b2;
             cursor: pointer;
             font-size: 2rem;
           }
-
         }
+      }
+      .cloud-text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-65%);
+        right: 50px;
+        p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 5%);
+          font-size: 2.5rem;
+          width: 100%;         
+          text-align: center;
+          color: $purple;
+          font-family: 'Exo';
+          span {
+            font-weight: bolder;
+          }
+        }
+      }
 
+      .cloud-text-register {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-65%);
+        left: 30px;
+        p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-65%, -65%);
+          font-size: 2rem;
+          width: 100%;         
+          text-align: center;
+          color: $purple;
+          font-family: 'Exo';
+          span {
+            font-weight: bolder;
+          }
+        }
       }
     }
   }
@@ -484,5 +523,13 @@ $gray: #b2b2b2;
   }
 }
 
+
+.cloud-text {
+  display: none;
+}
+
+.cloud-text-register {
+  display: none;
+}
 
 }
