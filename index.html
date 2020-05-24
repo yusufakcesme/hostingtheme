@@ -500,22 +500,22 @@
 
 
 
-  <div class="numbers">
+  <div class="numbers" id="numbers">
     <div class="container">
       <div class="numbers-row">
         <div class="number-box">
           <img src="images/icons/support.png" alt="">
-          <h3>1875 Support Ticket</h3>
+          <h3><span class="counter">1875</span> Support Ticket</h3>
           <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
         </div>
         <div class="number-box">
           <img src="images/icons/clock.png" alt="">
-          <h3>1875 Support Ticket</h3>
+          <h3><span class="counter">1875</span> Support Ticket</h3>
           <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
         </div>
         <div class="number-box">
           <img src="images/icons/star.png" alt="">
-          <h3>1875 Support Ticket</h3>
+          <h3><span class="counter">1875</span> Support Ticket</h3>
           <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
         </div>
       </div>
@@ -526,17 +526,17 @@
       <div class="numbers-row">
         <div class="number-box">
           <img src="images/icons/closedTicket.png" alt="">
-          <h3>1875 Support Ticket</h3>
+          <h3><span class="counter">1875</span> Support Ticket</h3>
           <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
         </div>
         <div class="number-box">
           <img src="images/icons/activeclient.png" alt="">
-          <h3>1875 Support Ticket</h3>
+          <h3><span class="counter">1875</span> Support Ticket</h3>
           <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
         </div>
         <div class="number-box">
           <img src="images/icons/heart.png" alt="">
-          <h3>1875 Support Ticket</h3>
+          <h3><span class="counter">1875</span> Support Ticket</h3>
           <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
         </div>
       </div>
@@ -767,6 +767,33 @@
         }
       });
     }
+
+    /*****************************************************/
+
+    var eventFired = false,
+      objectPositionTop = $('#numbers').offset().top - 500;
+
+    $(window).on('scroll', function () {
+
+      var currentPosition = $(document).scrollTop();
+      if (currentPosition > objectPositionTop && eventFired === false) {
+        eventFired = true;
+        $('.counter').each(function () {
+          $(this).prop('counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          });
+        });
+      }
+
+    });
+
+
   </script>
 
 
