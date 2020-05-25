@@ -235,10 +235,12 @@
 
             <div class="sepet-labels">
               <div class="sepet-option">
+
                 <label for="yeni-alanadi" class="container-check">
-                  <input type="checkbox" class="secenek" id="yeni-alanadi" name="name1">
+                  <input type="checkbox" class="secenek" id="yeni-alanadi" name="">
                   <span class="checkmark-check"></span>
                 </label>
+
                 <div class="yeni-kayit">
                   <p>Yeni bir alan adı kaydetmek istiyorum.</p>
                   <div class="alanadi-input">
@@ -258,13 +260,34 @@
               </div>
 
               <div class="sepet-option">
+
                 <label for="mevcut-alanadi" class="container-check">
-                  <input type="checkbox" class="secenek" id="mevcut-alanadi" name="name1">
+                  <input type="checkbox" class="secenek" id="mevcut-alanadi" name="">
                   <span class="checkmark-check"></span>
                 </label>
+
                 <div class="yeni-kayit">
                   <p>Mevcut bir alanadım var, sadece isim sunucularını (nameserver)
                     güncellemek istiyorum.</p>
+                  <div class="mevcut-input">
+                    <input type="text" placeholder="Alanadını giriniz">
+                    <p>.com</p>
+                    <a href="#" class="kullan">Kullan</a>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="sepet-option">
+
+                <label for="mevcut-alanadi-transfer" class="container-check">
+                  <input type="checkbox" class="secenek" id="mevcut-alanadi-transfer" name="">
+                  <span class="checkmark-check"></span>
+                </label>
+
+                <div class="yeni-kayit">
+                  <p>Mevcut Alan adımı transfer etmek istiyorum</p>
                   <div class="mevcut-input">
                     <input type="text" placeholder="Alanadını giriniz">
                     <p>.com</p>
@@ -446,6 +469,24 @@
     /*if the user clicks anywhere outside the select box,
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
+
+    // the selector will match all input controls of type :checkbox
+    // and attach a click event handler 
+    $("input:checkbox").on('click', function () {
+      // in the handler, 'this' refers to the box clicked on
+      var $box = $(this);
+      if ($box.is(":checked")) {
+        // the name of the box is retrieved using the .attr() method
+        // as it is assumed and expected to be immutable
+        var group = "input:checkbox[name='" + $box.attr("name") + "']";
+        // the checked state of the group/box on the other hand will change
+        // and the current value is retrieved using .prop() method
+        $(group).prop("checked", false);
+        $box.prop("checked", true);
+      } else {
+        $box.prop("checked", false);
+      }
+    });
   </script>
 
 </body>

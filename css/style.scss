@@ -60,6 +60,7 @@ $gray: #b2b2b2;
 
 html {
   font-size: 10px; /* 1 rem unit */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -125,6 +126,17 @@ header {
       font-size: 4.8rem;
       font-weight: bolder;
       color: $purple;
+      height: 90px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      a {
+        display: flex;
+        align-items: center;
+        img {
+          height: 80px;
+        }
+      }
     }
     ul {
       display: flex;
@@ -135,6 +147,15 @@ header {
           background-color: #846b99;
           a {
             color: #fff;
+          }
+        }
+        &:hover {
+          background-color: #846b99;
+          a {
+            color: #fff;
+          }
+          .nav-dropdown {
+            display: flex;
           }
         }
         a {
@@ -1323,6 +1344,20 @@ footer {
       .footer-logo {
         font-size: 4rem;
         margin-bottom: 15px;
+        font-size: 4.8rem;
+        font-weight: bolder;
+        color: $purple;
+        height: 90px;
+        width: auto;
+        display: flex;
+        align-items: center;
+      a {
+        display: flex;
+        align-items: center;
+        img {
+          height: 80px;
+        }
+      }
       }
       .footer-about-text {
         font-size: 1.4rem;
@@ -2269,6 +2304,7 @@ header {
           font-size: 4rem;
           margin-bottom: 15px;
           text-align: center;
+          justify-content: center;
         }
         .footer-about-text {
           font-size: 1.4rem;

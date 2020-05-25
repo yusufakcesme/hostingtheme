@@ -14,9 +14,7 @@ $('.mobile-nav-item').on('click', function () {
 })
 
 
-/* ehader nav dropdown */
-
-
+/* header nav dropdown
 $('.head-nav-item').on('click', function () {
   if ($(this).parent().find('.nav-dropdown').css("display") === "none") {
     $('.nav-dropdown').removeClass('show-dropdown')
@@ -28,3 +26,5 @@ $('.head-nav-item').on('click', function () {
     $(this).parent().find('.nav-dropdown').removeClass('show-dropdown')
   }
 })
+
+*/

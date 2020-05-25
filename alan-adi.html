@@ -7,7 +7,12 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.css">
+
   <link rel="stylesheet" href="css/alan-adi.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
@@ -33,7 +38,9 @@
 
   <header>
     <div class="container">
-      <div class="logo">LOGO</div>
+      <div class="logo"><a href="#">
+          <img src="images/logoMor.png" alt="">
+        </a></div>
       <ul>
         <li class="head-li">
           <a class="head-nav-item">Alan Adı <i class="fa fa-chevron-down"></i></a>
@@ -212,9 +219,9 @@
       <div class="container">
         <div class="page-title">alanadınızı sorgulayın, <br> <strong>internette yerinizi alın!</strong></div>
         <div class="page-links">
-          <a href="#">TR EVRAKLAR</a>
-          <a href="#">TRANSFER ET</a>
-          <a href="#">FİYAT TABLOSU</a>
+          <a href="#tabs" id="tr-evraklar-a">TR EVRAKLAR</a>
+          <a href="#tabs" id="transfer-a">TRANSFER ET</a>
+          <a href="#tabs" id="fiyat-a">FİYAT TABLOSU</a>
         </div>
       </div>
     </div>
@@ -287,7 +294,7 @@
   </div>
 
 
-  <div class="tab-buttons-4">
+  <div class="tab-buttons-4" id="tabs">
     <div class="container">
       <button class="tab-btn active-tab-btn" id="tab-btn-1" type="button">OZELLIKLER</button>
       <button class="tab-btn" type="button" id="tab-btn-2">FIYAT TABLOSU</button>
@@ -677,7 +684,11 @@
     </div>
     <div class="container">
       <div class="footer-box">
-        <div class="footer-logo">LOGO</div>
+        <div class="footer-logo">
+          <a href="#">
+            <img src="images/logoBeyaz.png" alt="">
+          </a>
+        </div>
         <p class="footer-about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis voluptatum
           quibusdam sit temporibus facere voluptas accusantium, veritatis labore veniam enim? Voluptatum blanditiis at
           expedita aliquam odio vero aut molestias corporis.</p>
@@ -757,6 +768,25 @@
       }
     })
 
+    $('#tr-evraklar-a').on('click', function () {
+      $('.tab-btn').removeClass('active-tab-btn')
+      $('.tab-item').removeClass('active-tab-item')
+      $('#tab-btn-4').addClass('active-tab-btn')
+      $('#tr-gerekli').addClass('active-tab-item')
+    })
+    $('#fiyat-a').on('click', function () {
+      $('.tab-btn').removeClass('active-tab-btn')
+      $('.tab-item').removeClass('active-tab-item')
+      $('#tab-btn-2').addClass('active-tab-btn')
+      $('#fiyat-tablo').addClass('active-tab-item')
+    })
+
+    $('#transfer-a').on('click', function () {
+      $('.tab-btn').removeClass('active-tab-btn')
+      $('.tab-item').removeClass('active-tab-item')
+      $('#tab-btn-3').addClass('active-tab-btn')
+      $('#sss').addClass('active-tab-item')
+    })
 
   </script>
   <script src="js/site-main.js"></script>

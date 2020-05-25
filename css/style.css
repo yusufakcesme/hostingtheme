@@ -54,6 +54,7 @@ website: https://yusufakcesme.com
 html {
   font-size: 10px;
   /* 1 rem unit */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -143,6 +144,27 @@ header .container .logo {
   font-size: 4.8rem;
   font-weight: bolder;
   color: #2d0452;
+  height: 90px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logo a img {
+  height: 80px;
 }
 
 header .container ul {
@@ -162,6 +184,20 @@ header .container ul li.active-header-nav {
 
 header .container ul li.active-header-nav a {
   color: #fff;
+}
+
+header .container ul li:hover {
+  background-color: #846b99;
+}
+
+header .container ul li:hover a {
+  color: #fff;
+}
+
+header .container ul li:hover .nav-dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header .container ul li a {
@@ -1737,6 +1773,30 @@ footer > .container .footer-box {
 footer > .container .footer-box .footer-logo {
   font-size: 4rem;
   margin-bottom: 15px;
+  font-size: 4.8rem;
+  font-weight: bolder;
+  color: #2d0452;
+  height: 90px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > .container .footer-box .footer-logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > .container .footer-box .footer-logo a img {
+  height: 80px;
 }
 
 footer > .container .footer-box .footer-about-text {
@@ -2893,6 +2953,9 @@ footer > .container .footer-links .footer-form button {
     font-size: 4rem;
     margin-bottom: 15px;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer > .container .footer-box .footer-about-text {
     font-size: 1.4rem;
