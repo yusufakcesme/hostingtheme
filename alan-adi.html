@@ -38,9 +38,11 @@
 
   <header>
     <div class="container">
-      <div class="logo"><a href="#">
+      <div class="logo">
+        <a href="#">
           <img src="images/logoMor.png" alt="">
-        </a></div>
+        </a>
+      </div>
       <ul>
         <li class="head-li">
           <a class="head-nav-item">Alan Adı <i class="fa fa-chevron-down"></i></a>
@@ -302,41 +304,41 @@
       <button class="tab-btn" type="button" id="tab-btn-4">TR GEREKLI BELGELER</button>
     </div>
   </div>
-  <div class="tab-contents">
+  <div class="tab-contents" id="numbers">
     <div class="container">
 
       <div class="tab-item active-tab-item" id="ozellikler">
         <div class="numbers-row">
           <div class="number-box">
             <img src="images/icons/support.png" alt="">
-            <h3>1875 Support Ticket</h3>
+            <h3><span class="counter">1875</span> Support Ticket</h3>
             <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
           </div>
           <div class="number-box">
             <img src="images/icons/clock.png" alt="">
-            <h3>1875 Support Ticket</h3>
+            <h3><span class="counter">1875</span> Support Ticket</h3>
             <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
           </div>
           <div class="number-box">
             <img src="images/icons/star.png" alt="">
-            <h3>1875 Support Ticket</h3>
+            <h3><span class="counter">1875</span> Support Ticket</h3>
             <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
           </div>
         </div>
         <div class="numbers-row">
           <div class="number-box">
             <img src="images/icons/closedTicket.png" alt="">
-            <h3>1875 Support Ticket</h3>
+            <h3><span class="counter">1875</span> Support Ticket</h3>
             <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
           </div>
           <div class="number-box">
             <img src="images/icons/activeclient.png" alt="">
-            <h3>1875 Support Ticket</h3>
+            <h3><span class="counter">1875</span> Support Ticket</h3>
             <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
           </div>
           <div class="number-box">
             <img src="images/icons/heart.png" alt="">
-            <h3>1875 Support Ticket</h3>
+            <h3><span class="counter">1875</span> Support Ticket</h3>
             <p>Lorem ipsum dolor sit <br> amet consectetuer elit.</p>
           </div>
         </div>
@@ -734,20 +736,17 @@
 
   <script>
 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
+    $('.accordion').on('click', function () {
+      $('.accordion').removeClass('active')
+      $(this).toggleClass('active')
+      if ($(this).parent().find('.panel').css("display") === "none") {
+        $('.panel').slideUp()
+        $(this).parent().find('.panel').slideDown()
+      } else {
+        $(this).parent().find('.panel').slideUp()
+        $('.accordion').removeClass('active')
+      }
+    })
 
 
     $('.tab-btn').on('click', function () {
@@ -787,6 +786,41 @@
       $('#tab-btn-3').addClass('active-tab-btn')
       $('#sss').addClass('active-tab-item')
     })
+
+
+
+
+
+
+
+
+
+
+
+
+    var eventFired = false,
+      objectPositionTop = $('#numbers').offset().top - 500;
+
+    $(window).on('scroll', function () {
+
+      var currentPosition = $(document).scrollTop();
+      if (currentPosition > objectPositionTop && eventFired === false) {
+        eventFired = true;
+        $('.counter').each(function () {
+          $(this).prop('counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            }
+          });
+        });
+      }
+
+    });
+
 
   </script>
   <script src="js/site-main.js"></script>

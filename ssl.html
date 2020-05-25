@@ -871,20 +871,31 @@
 
 
   <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+    $('.accordion').on('click', function () {
+      $('.accordion').removeClass('active')
+      $(this).toggleClass('active')
+      if ($(this).parent().find('.panel').css("display") === "none") {
+        $('.panel').slideUp()
+        $(this).parent().find('.panel').slideDown()
+      } else {
+        $(this).parent().find('.panel').slideUp()
+        $('.accordion').removeClass('active')
+      }
+    })
+    /* var acc = document.getElementsByClassName("accordion");
+     var i;
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
+     for (i = 0; i < acc.length; i++) {
+       acc[i].addEventListener("click", function () {
+         this.classList.toggle("active");
+         var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) {
+           panel.style.maxHeight = null;
+         } else {
+           panel.style.maxHeight = panel.scrollHeight + "px";
+         }
+       });
+     }*/
   </script>
 
   <script src="js/site-main.js"></script>

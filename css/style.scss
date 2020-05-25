@@ -1263,13 +1263,14 @@ header {
     }
     
     .active, .accordion:hover {
-      background-color: #ccc;
+      background-color: $purple;
+      color: #fff;
     }
   
     .panel {
       padding: 0 18px;
       background-color: white;
-      max-height: 0;
+      display: none;
       margin-top: 5px;
       overflow: hidden;
       transition: max-height 0.2s ease-out;

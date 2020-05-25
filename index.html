@@ -32,9 +32,11 @@
 
   <header>
     <div class="container">
-      <div class="logo"><a href="#">
-          <img src="images/logo.png" alt="">
-        </a></div>
+      <div class="logo">
+        <a href="#">
+          <img src="images/logoMor.png" alt="">
+        </a>
+      </div>
       <ul>
         <li class="head-li">
           <a class="head-nav-item">Alan Adı <i class="fa fa-chevron-down"></i></a>
@@ -823,7 +825,11 @@
     </div>
     <div class="container">
       <div class="footer-box">
-        <div class="footer-logo">LOGO</div>
+        <div class="footer-logo">
+          <a href="#">
+            <img src="images/logoBeyaz.png" alt="">
+          </a>
+        </div>
         <p class="footer-about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis voluptatum
           quibusdam sit temporibus facere voluptas accusantium, veritatis labore veniam enim? Voluptatum blanditiis at
           expedita aliquam odio vero aut molestias corporis.</p>
@@ -896,21 +902,17 @@
 
 
 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-
+    $('.accordion').on('click', function () {
+      $('.accordion').removeClass('active')
+      $(this).toggleClass('active')
+      if ($(this).parent().find('.panel').css("display") === "none") {
+        $('.panel').slideUp()
+        $(this).parent().find('.panel').slideDown()
+      } else {
+        $(this).parent().find('.panel').slideUp()
+        $('.accordion').removeClass('active')
+      }
+    })
     /*****************************************************/
 
     var eventFired = false,

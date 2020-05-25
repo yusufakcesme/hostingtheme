@@ -1651,13 +1651,14 @@ header .container .header-buttons .mobile-menu-button {
 }
 
 .faq-box .faq-item .active, .faq-box .faq-item .accordion:hover {
-  background-color: #ccc;
+  background-color: #2d0452;
+  color: #fff;
 }
 
 .faq-box .faq-item .panel {
   padding: 0 18px;
   background-color: white;
-  max-height: 0;
+  display: none;
   margin-top: 5px;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
