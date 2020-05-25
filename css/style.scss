@@ -140,7 +140,11 @@ header {
         a {
           font-size: 1.6rem;
           color: $darkPurple;
-          margin: 0 25px;
+          margin: 0 20px;
+          cursor: pointer;
+        }
+        .show-dropdown {
+          display: flex !important;
         }
         .nav-dropdown {
           position: absolute;
@@ -151,6 +155,54 @@ header {
           z-index: 9999;
           border-radius: 0 0 40px 40px;
           box-shadow: -16px 0px 20px rgba(0,0,0,.5);
+          display: none;
+          align-items: center;
+          .drop-text {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            flex: 1;
+            .text {
+              margin-left: 20px;
+              h3 {
+                font-size: 2.2rem;
+                color: #fff;
+                line-height: 2;
+              }
+              p {
+                font-size: 1.8rem;
+                color: #fff;
+                font-family: 'AvenirLight';
+                line-height: 1.5;
+              }
+            }
+          }
+          .mid-line {
+            height: 170px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: $purple;
+            box-shadow: 0px 0px 18px rgba(0,0,0,.5);
+          }
+          .drop-links {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            .link-box {
+              line-height: 1.5;
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              a {
+                padding: 6px 5px;
+                border-bottom: 1px solid #7b6092;
+                font-size: 1.6rem;
+                &:last-child {
+                  border: none;
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -167,7 +167,14 @@ header .container ul li.active-header-nav a {
 header .container ul li a {
   font-size: 1.6rem;
   color: #0f011a;
-  margin: 0 25px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+header .container ul li .show-dropdown {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 header .container ul li .nav-dropdown {
@@ -180,6 +187,85 @@ header .container ul li .nav-dropdown {
   border-radius: 0 0 40px 40px;
   -webkit-box-shadow: -16px 0px 20px rgba(0, 0, 0, 0.5);
           box-shadow: -16px 0px 20px rgba(0, 0, 0, 0.5);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container ul li .nav-dropdown .drop-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header .container ul li .nav-dropdown .drop-text .text {
+  margin-left: 20px;
+}
+
+header .container ul li .nav-dropdown .drop-text .text h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  line-height: 2;
+}
+
+header .container ul li .nav-dropdown .drop-text .text p {
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: 'AvenirLight';
+  line-height: 1.5;
+}
+
+header .container ul li .nav-dropdown .mid-line {
+  height: 170px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #2d0452;
+  -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
+}
+
+header .container ul li .nav-dropdown .drop-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container ul li .nav-dropdown .drop-links .link-box {
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header .container ul li .nav-dropdown .drop-links .link-box a {
+  padding: 6px 5px;
+  border-bottom: 1px solid #7b6092;
+  font-size: 1.6rem;
+}
+
+header .container ul li .nav-dropdown .drop-links .link-box a:last-child {
+  border: none;
 }
 
 header .container .header-buttons {
