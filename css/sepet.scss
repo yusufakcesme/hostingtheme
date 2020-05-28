@@ -1168,6 +1168,29 @@ form {
   }
 }
 
+.red {
+  background-color: #ff4c4c !important;
+  color: #fff;
+}
+
+.login-label-row {
+  label {
+    input {
+      height: 50px !important;
+      font-size: 1.6rem;
+    }
+    button {
+      flex: 1;
+      height: 50px;
+      background-color: $purple;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1.6rem;
+      font-family: 'AvenirBlack';
+    }
+  }
+}
 
 .form-info {
   width: 100%;
