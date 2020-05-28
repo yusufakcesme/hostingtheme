@@ -7,6 +7,8 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/giris-yap.css">
 
@@ -232,186 +234,195 @@
   </div>
 
   <div class="container">
-    <div class="content-box">
-      <div class="form-label">
-        <h2 class="content-title">Kisisel Bilgiler</h2>
-        <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
-          transfer
-          yapabilirsiniz.</p>
-        <div class="page-content">
-          <div class="label-row">
-            <label>
-              <span>Adı:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Soyadı:</span>
-              <input type="text">
-            </label>
-          </div>
-          <div class="label-row">
-            <label>
-              <span>E-Mail Adresi:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>TC Kimlik No:</span>
-              <input type="text">
-            </label>
-          </div>
-          <div class="label-row">
-            <label>
-              <span>Parolanız:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Parola Tekrar:</span>
-              <input type="text">
-            </label>
+    <form action="" method="POST">
+      <div class="content-box">
+
+        <div class="form-label">
+          <h2 class="content-title">Kisisel Bilgiler</h2>
+          <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
+            transfer
+            yapabilirsiniz.</p>
+          <div class="page-content">
+            <div class="label-row">
+              <label>
+                <span>Adı:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Soyadı:</span>
+                <input type="text">
+              </label>
+            </div>
+            <div class="label-row">
+              <label>
+                <span>E-Mail Adresi:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>TC Kimlik No:</span>
+                <input type="text">
+              </label>
+            </div>
+            <div class="label-row">
+              <label>
+                <span>Parolanız:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Parola Tekrar:</span>
+                <input type="text">
+              </label>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="form-label">
-        <h2 class="content-title">Adres Bilgiler</h2>
-        <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
-          transfer
-          yapabilirsiniz.</p>
-        <div class="page-content">
-          <div class="label-row">
-            <label>
-              <span>Adres:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Adres:</span>
-              <input type="text">
-            </label>
-          </div>
-          <div class="label-row">
-            <label>
-              <span>Adres(devamı):</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Adres(devamı):</span>
-              <input type="text">
-            </label>
-          </div>
-          <div class="label-row">
-            <label>
-              <span>Sehir:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Sehir:</span>
-              <input type="text">
-            </label>
-          </div>
-          <div class="label-row">
-            <label>
-              <span>Telefon Numarası:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Telefon Numarası:</span>
-              <input type="text">
-            </label>
+        <div class="form-label">
+          <h2 class="content-title">Adres Bilgiler</h2>
+          <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
+            transfer
+            yapabilirsiniz.</p>
+          <div class="page-content">
+            <div class="label-row">
+              <label>
+                <span>Adres:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Adres:</span>
+                <input type="text">
+              </label>
+            </div>
+            <div class="label-row">
+              <label>
+                <span>Adres(devamı):</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Adres(devamı):</span>
+                <input type="text">
+              </label>
+            </div>
+            <div class="label-row">
+              <label>
+                <span>Sehir:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Sehir:</span>
+                <input type="text">
+              </label>
+            </div>
+            <div class="label-row">
+              <label>
+                <span>Telefon Numarası:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Telefon Numarası:</span>
+                <input type="text">
+              </label>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="form-label">
-        <h2 class="content-title">Kurumsal Bilgiler</h2>
-        <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
-          transfer
-          yapabilirsiniz.</p>
-        <div class="page-content">
-          <div class="label-row">
-            <label>
-              <span>Firma Adı:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Vergi Numarası:</span>
-              <input type="text">
-            </label>
-          </div>
-          <div class="label-row">
-            <label>
-              <span>Vergi Dairesi:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Yetkili Kisi:</span>
-              <input type="text">
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-label">
-        <h2 class="content-title">Diger Bilgiler</h2>
-        <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
-          transfer
-          yapabilirsiniz.</p>
-        <div class="page-content">
-          <div class="label-row">
-            <label>
-              <span>Dogum yılınız:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Bize Nasıl Ulastınız:</span>
-              <input type="text">
-            </label>
-          </div>
-          <div class="label-row">
-            <label>
-              <span>SMS Bilgilendirme:</span>
-              <input type="text">
-            </label>
-            <label>
-              <span>Mikrofon Sende:</span>
-              <input type="text">
-            </label>
+        <div class="form-label">
+          <h2 class="content-title">Kurumsal Bilgiler</h2>
+          <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
+            transfer
+            yapabilirsiniz.</p>
+          <div class="page-content">
+            <div class="label-row">
+              <label>
+                <span>Firma Adı:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Vergi Numarası:</span>
+                <input type="text">
+              </label>
+            </div>
+            <div class="label-row">
+              <label>
+                <span>Vergi Dairesi:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Yetkili Kisi:</span>
+                <input type="text">
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="forget-pass forget-register">
-        <label class="container" for="beni-hatirla">
-          <a href="#">Kullanım Sozlesmesi</a>'ni <strong>okudum ve onaylıyorum.</strong>
-          <input type="checkbox" id="beni-hatirla" checked="checked">
-          <span class="checkmark"></span>
-        </label>
-      </div>
 
-      <div class="policy-text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit? Corporis iure illum quae culpa
-          officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus maiores,
-          voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta suscipit
-          nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
-          tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
-          tenetur voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit? Corporis
-          iure illum quae culpa
-          officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus maiores,
-          voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta suscipit
-          nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
-          tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
-          tenetur voluptatem?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit? Corporis iure illum quae culpa
-          officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus maiores,
-          voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta suscipit
-          nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
-          tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
-          tenetur voluptatem?</p>
-      </div>
+        <div class="form-label">
+          <h2 class="content-title">Diger Bilgiler</h2>
+          <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
+            transfer
+            yapabilirsiniz.</p>
+          <div class="page-content">
+            <div class="label-row">
+              <label>
+                <span>Dogum yılınız:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Bize Nasıl Ulastınız:</span>
+                <input type="text">
+              </label>
+            </div>
+            <div class="label-row">
+              <label>
+                <span>SMS Bilgilendirme:</span>
+                <input type="text">
+              </label>
+              <label>
+                <span>Mikrofon Sende:</span>
+                <input type="text">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="forget-pass forget-register">
+          <label class="container" for="beni-hatirla">
+            <a href="#">Kullanım Sozlesmesi</a>'ni <strong>okudum ve onaylıyorum.</strong>
+            <input type="checkbox" id="beni-hatirla" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+        </div>
 
-      <button type="submit" class="register-btn">KAYIT Ol</button>
-    </div>
+        <div class="policy-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit? Corporis iure illum quae
+            culpa
+            officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus
+            maiores,
+            voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta suscipit
+            nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
+            tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
+            tenetur voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit? Corporis
+            iure illum quae culpa
+            officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus
+            maiores,
+            voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta suscipit
+            nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
+            tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
+            tenetur voluptatem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit? Corporis iure illum quae
+            culpa
+            officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus
+            maiores,
+            voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta suscipit
+            nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
+            tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
+            tenetur voluptatem?</p>
+        </div>
+
+        <button type="submit" class="register-btn">KAYIT Ol</button>
+
+      </div>
+    </form>
   </div>
 
 
