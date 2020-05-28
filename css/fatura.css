@@ -1,0 +1,434 @@
+.container {
+  max-width: 1000px;
+}
+
+.container .fatura {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container .fatura .fatura-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .fatura .fatura-head .fatura-logo img {
+  max-width: 300px;
+}
+
+.container .fatura .fatura-head .fatura-logo p {
+  font-size: 3rem;
+  color: #b2b2b2;
+  font-weight: bold;
+}
+
+.container .fatura .fatura-head .fatura-metin {
+  font-size: 3rem;
+  color: #ff2a00;
+  font-weight: bolder;
+}
+
+.container .fatura .fatura-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.container .fatura .fatura-details .fatura-address {
+  font-size: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 1.5;
+}
+
+.container .fatura .fatura-details .fatura-detail-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .fatura .fatura-details .fatura-detail-left > p {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.container .fatura .fatura-details .fatura-detail-left .select-box {
+  margin: 0;
+}
+
+.container .fatura .fatura-table .table-head {
+  width: 100%;
+  height: 40px;
+  background-color: #2d0452;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  border-radius: 10px 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+.container .fatura .fatura-table ul li {
+  width: 100%;
+  min-height: 40px;
+  border-bottom: 1px solid #b2b2b2;
+  background-color: #eae5ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.container .fatura .fatura-table ul li.dark {
+  background-color: #9e8baf;
+  color: #fff;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .fatura .fatura-row-table {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container .fatura .fatura-row-table h2 {
+  color: #2d0452;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.container .fatura .fatura-row-table .table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #b2b2b2;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.container .fatura .fatura-row-table .table-row:nth-child(odd) {
+  background-color: #9e8baf;
+  color: #fff;
+  border-radius: 35px;
+}
+
+.container .fatura .fatura-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.container .fatura .fatura-buttons > a {
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #9e8baf;
+  color: #fff;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .fatura .fatura-buttons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .fatura .fatura-buttons div a {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #2d0452;
+  color: #fff;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .fatura .fatura-buttons div a:first-child {
+  margin-right: 20px;
+}
+
+.select-box {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #60666d;
+}
+
+.select-box__current {
+  position: relative;
+  border: 2px solid #2d0452;
+  cursor: pointer;
+  outline: none;
+}
+
+.select-box__current:focus + .select-box__list {
+  opacity: 1;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
+.select-box__current:focus + .select-box__list .select-box__option {
+  cursor: pointer;
+}
+
+.select-box__current:focus .select-box__icon {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  opacity: 0.3;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.select-box__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.select-box__input {
+  display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+  display: block;
+}
+
+.select-box__input-text {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  color: #2d0452;
+  background-color: #fff;
+}
+
+.select-box__list {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  z-index: 99;
+  -webkit-animation-name: HideList;
+          animation-name: HideList;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
+  -webkit-box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.select-box__option {
+  display: block;
+  padding: 15px;
+  background-color: #fff;
+  color: #2d0452;
+}
+
+.select-box__option:hover, .select-box__option:focus {
+  color: #546c84;
+  background-color: #fbfbfb;
+}
+
+@-webkit-keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+  .fatura-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .fatura-head .fatura-logo img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  .fatura-head .fatura-logo p {
+    font-size: 3rem;
+    color: #b2b2b2;
+    font-weight: bold;
+  }
+  .fatura-head .fatura-metin {
+    font-size: 3rem;
+    color: #ff2a00;
+    font-weight: bolder;
+  }
+  .fatura-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  .fatura-details .fatura-address {
+    font-size: 2rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .fatura-details .fatura-detail-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fatura-details .fatura-detail-left > p {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+  .fatura-details .fatura-detail-left .select-box {
+    margin: 0;
+  }
+  .fatura-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fatura-buttons > a {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=fatura.css.map */

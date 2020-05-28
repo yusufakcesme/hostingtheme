@@ -1,0 +1,353 @@
+$darkPurple: #0f011a;
+$purple: #2d0452;
+$red: #ff2a00;
+$yellow: #ffaf00;
+$blue: #00baff;
+$gray: #b2b2b2;
+
+
+.container {
+  max-width: 1000px;
+  .fatura {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .fatura-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .fatura-logo {
+        img {
+          max-width: 300px;
+        }
+        p {
+          font-size: 3rem;
+          color: $gray;
+          font-weight: bold;
+        }
+      }
+      .fatura-metin {
+        font-size: 3rem;
+        color: $red;
+        font-weight: bolder;
+      }
+    }
+
+
+    .fatura-details {
+      display: flex;
+      margin-top: 80px;
+      margin-bottom: 50px;
+      .fatura-address {
+        font-size: 2rem;
+        flex: 1;
+        line-height: 1.5;
+      }
+      .fatura-detail-left {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        & > p {
+          font-size: 2.4rem;
+          margin-bottom: 10px;
+        }
+        .select-box {
+          margin:0;
+        }
+      }
+    }
+
+
+
+
+    .fatura-table {
+      .table-head {
+        width: 100%;
+        height: 40px;
+        background-color: $purple;
+        color: #fff;
+        font-size: 2.4rem;
+        font-weight: bolder;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+      }
+      ul {
+        li {
+          width: 100%;
+          min-height: 40px;
+          border-bottom: 1px solid $gray;
+          background-color: #eae5ed;
+          display: flex;
+          align-items: center;
+          padding: 5px 20px;
+          justify-content: space-between;
+          font-size: 1.6rem;
+        &.dark {
+          background-color: #9e8baf;
+          color: #fff;
+          justify-content: flex-end;
+        }
+        }
+      }
+    }
+
+
+    .fatura-row-table {
+      width: 100%;
+      margin-top: 50px;
+      h2 {
+        color: $purple;
+        font-size: 2rem;
+        font-weight: bolder;
+        margin-bottom: 30px;
+      }
+      .table-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $gray;
+        height: 35px;
+        margin-top: 10px;
+        &:nth-child(odd) {
+          background-color: #9e8baf;
+          color: #fff;
+          border-radius: 35px;
+        }
+      }
+    }
+
+
+    .fatura-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 60px;
+      & > a {
+        width: 200px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #9e8baf;
+        color: #fff;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        display: flex;
+        a {
+          width: 100px;
+          height: 40px;
+          border-radius: 40px;
+          background-color: $purple;
+          color: #fff;
+          font-size: 1.8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+// CUSTOM SELECT BOX 
+.select-box {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #60666d;
+  
+  
+  &__current {
+    position: relative;
+    border: 2px solid $purple;
+    cursor: pointer;
+    outline: none;
+    
+    &:focus {
+      & + .select-box__list {
+        opacity: 1;
+
+        // We have to set "animation-name: none;" to make the list visible (read below how it works)
+
+        animation-name: none;
+        
+        .select-box__option {
+          cursor: pointer;
+        }
+      }
+      
+      .select-box__icon {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+  
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.3;
+    transition: 0.2s ease;
+  }
+  
+  &__value {
+    display: flex;
+  }
+  
+  &__input {
+    display: none;
+    
+    &:checked + .select-box__input-text {
+      display: block;
+    }
+  }
+  
+  &__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    color: $purple;
+    background-color: #fff;
+  }
+  
+  &__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    z-index: 99;
+    
+    // We need to use animation with delay.
+    // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.
+    // This delay will not be noticed because we set "opacity" to "0".
+    // We also use "animation-fill-mode: forwards" to make the list stay hidden.
+    
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+  }
+  
+  &__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    color: $purple;
+    
+    &:hover,
+    &:focus {
+      color: #546c84;
+      background-color: #fbfbfb;
+    }
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+  html {
+    font-size: 8px;
+  }
+
+    .fatura-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .fatura-logo {
+        img {
+          max-width: 300px;
+          width: 100%;
+          height: auto;
+        }
+        p {
+          font-size: 3rem;
+          color: $gray;
+          font-weight: bold;
+        }
+      }
+      .fatura-metin {
+        font-size: 3rem;
+        color: $red;
+        font-weight: bolder;
+      }
+    }
+
+
+
+    .fatura-details {
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      margin-bottom: 50px;
+      .fatura-address {
+        font-size: 2rem;
+        flex: 1;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .fatura-detail-left {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        & > p {
+          font-size: 2.4rem;
+          margin-bottom: 10px;
+        }
+        .select-box {
+          margin:0;
+        }
+      }
+    }
+
+
+    .fatura-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 60px;
+      flex-direction: column;
+      & > a {
+        margin-bottom: 20px;
+      }
+    }
+}
