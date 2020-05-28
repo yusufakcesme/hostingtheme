@@ -8,6 +8,7 @@
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/giris-yap.css">
   <link rel="stylesheet" href="css/sepet.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" />
@@ -228,113 +229,247 @@
 
   <div class="container">
     <div class="content-box">
-      <!--<h2 class="content-title">Tüm Paketler</h2>
-      <p class="content-summary">YUKSEK PERFORMANSLI %99.99 UPTIME GARANTILI KIRALIK FIZIKSEL SUNUCULAR</p>-->
       <div class="page-content">
-        <div class="sepet">
-
-          <div class="sepet-content">
-            <h2 class="content-title">Incele ve Özellestir</h2>
-            <p class="content-summary">YUKSEK PERFORMANSLI %99.99 UPTIME GARANTILI KIRALIK FIZIKSEL SUNUCULAR</p>
-
-            <div class="urun-goruntule">
-              <div class="heading">
-                <p>Urun / Opsiyon</p>
-                <p>Fiyat / Periyot</p>
-              </div>
-
-              <div class="sepet-urun">
-                <div class="urun-ad">
-                  <span>Hosting</span>
-                  <p>Paket A</p>
-                </div>
-                <div class="urun-detay">
-                  <div class="fiyat-per">
-                    <span>25.00 TL</span>
-                    <select name="" id="">
-                      <option value="1 ay">1 AY</option>
-                      <option value="1 ay">2 AY</option>
-                    </select>
-                    <i class="fa fa-chevron-down"></i>
-                  </div>
-                  <div class="urun-sil">
-                    <button type="button"><i class="fa fa-times"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sepet-urun">
-                <div class="urun-ad">
-                  <span>Hosting</span>
-                  <p>Paket A</p>
-                </div>
-                <div class="urun-detay">
-                  <div class="fiyat-per">
-                    <span>25.00 TL</span>
-                    <select name="" id="">
-                      <option value="1 ay">1 AY</option>
-                      <option value="1 ay">2 AY</option>
-                    </select>
-                    <i class="fa fa-chevron-down"></i>
-                  </div>
-                  <div class="urun-sil">
-                    <button type="button"><i class="fa fa-times"></i></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sepet-urun">
-                <div class="urun-ad">
-                  <span>Hosting</span>
-                  <p>Paket A</p>
-                </div>
-                <div class="urun-detay">
-                  <div class="fiyat-per">
-                    <span>25.00 TL</span>
-                    <select name="" id="">
-                      <option value="1 ay">1 AY</option>
-                      <option value="1 ay">2 AY</option>
-                    </select>
-                    <i class="fa fa-chevron-down"></i>
-                  </div>
-                  <div class="urun-sil">
-                    <button type="button"><i class="fa fa-times"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="promosyon">
-              <h3>Promosyon kodum var</h3>
-              <div class="promosyon-input">
-                <input type="text" placeholder="Promosyon Kodunuz">
-                <button>KODU ONAYLA <i class="fa fa-chevron-right"></i></button>
-              </div>
-            </div>
-
-
-
+        <form action="" method="POST">
+          <div class="giris-uyari">
+            <p>Ödeme yapabilmek için lütfen kişisel bilgilerinizi ve fatura bilgilerinizi giriniz.</p>
+            <a href="kayit-ol.html">Yeni Hesap Oluştur</a>
           </div>
-
-          <div class="sepet-sidebar">
-            <h3>SIPARIS OZETI</h3>
-            <div class="siparis-ozeti">
-              <p>Paket A <span>13.00 <b>₺</b></span></p>
-              <p>C Sunucu <span>7.00 <b>₺</b></span></p>
-              <p>Uccretsiz Destek <span>0.00 <b>₺</b></span></p>
-              <hr />
-              <p>Ara Toplam <span>20.00 <b>₺</b></span></p>
-              <div class="total-price">
-                <p>SU AN ODENMESI GEREKEN</p>
-                <span>20.00 <b>₺</b></span>
+          <div class="form-label">
+            <h2 class="content-title">Kisisel Bilgiler</h2>
+            <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak,
+              uygunluğunuza göre kayıt ya da
+              transfer
+              yapabilirsiniz.</p>
+            <div class="page-content">
+              <div class="label-row">
+                <label>
+                  <span>Adı:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Soyadı:</span>
+                  <input type="text">
+                </label>
               </div>
-              <a href="#" class="continue-shopping">ALISVERISE DEVAM ET</a>
-              <a href="#" class="continue">DEVAM ET <i class="fa fa-chevron-right"></i></a>
+              <div class="label-row">
+                <label>
+                  <span>E-Mail Adresi:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>TC Kimlik No:</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div class="label-row">
+                <label>
+                  <span>Parolanız:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Parola Tekrar:</span>
+                  <input type="text">
+                </label>
+              </div>
             </div>
           </div>
 
-        </div>
+
+          <div class="form-label">
+            <h2 class="content-title">Adres Bilgiler</h2>
+            <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
+              transfer
+              yapabilirsiniz.</p>
+            <div class="page-content">
+              <div class="label-row">
+                <label>
+                  <span>Adres:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Adres:</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div class="label-row">
+                <label>
+                  <span>Adres(devamı):</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Adres(devamı):</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div class="label-row">
+                <label>
+                  <span>Sehir:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Sehir:</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div class="label-row">
+                <label>
+                  <span>Telefon Numarası:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Telefon Numarası:</span>
+                  <input type="text">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-label">
+            <h2 class="content-title">Kurumsal Bilgiler</h2>
+            <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
+              transfer
+              yapabilirsiniz.</p>
+            <div class="page-content">
+              <div class="label-row">
+                <label>
+                  <span>Firma Adı:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Vergi Numarası:</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div class="label-row">
+                <label>
+                  <span>Vergi Dairesi:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Yetkili Kisi:</span>
+                  <input type="text">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-label">
+            <h2 class="content-title">Diger Bilgiler</h2>
+            <p class="content-summary">Kaydetmek istediğiniz alan adını sorgulayarak, uygunluğunuza göre kayıt ya da
+              transfer
+              yapabilirsiniz.</p>
+            <div class="page-content">
+              <div class="label-row">
+                <label>
+                  <span>Dogum yılınız:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Bize Nasıl Ulastınız:</span>
+                  <input type="text">
+                </label>
+              </div>
+              <div class="label-row">
+                <label>
+                  <span>SMS Bilgilendirme:</span>
+                  <input type="text">
+                </label>
+                <label>
+                  <span>Mikrofon Sende:</span>
+                  <input type="text">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="forget-pass forget-register">
+            <label class="container" for="beni-hatirla">
+              <a href="#">Kullanım Sozlesmesi</a>'ni <strong>okudum ve onaylıyorum.</strong>
+              <input type="checkbox" id="beni-hatirla" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="policy-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit? Corporis iure illum quae
+              culpa
+              officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus
+              maiores,
+              voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta
+              suscipit
+              nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
+              tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
+              tenetur voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit?
+              Corporis
+              iure illum quae culpa
+              officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus
+              maiores,
+              voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta
+              suscipit
+              nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
+              tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
+              tenetur voluptatem?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere odit? Corporis iure illum quae
+              culpa
+              officiis atque at pariatur, dolore quis quia quos quidem quas nulla recusandae sequi rem.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit nihil architecto minus
+              maiores,
+              voluptates sunt distinctio iusto unde dolor id officiis corrupti recusandae voluptatum! Ipsa dicta
+              suscipit
+              nobis qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis magnam enim aspernatur qui
+              tempore laborum culpa reprehenderit. Modi iste nam, vel soluta officiis doloremque quidem? Distinctio vero
+              tenetur voluptatem?</p>
+          </div>
+
+          <div class="form-label">
+            <h2 class="content-title">Diger Bilgiler</h2>
+            <div class="total-price">Bugün Ödenmesi Gereken: &nbsp;<span>94.56 TL</span></div>
+            <p class="odeme-yontemi-p">Tercih ettiğiniz ödeme yöntemini seçiniz.</p>
+            <div class="odeme-yontemleri">
+              <label for="kredi-karti" class="container-check-eklenti" style="background: none;">
+                <p>Kredi Kartı</p>
+                <input type="checkbox" class="eklenti" id="kredi-karti" name="odeme_yont">
+                <span class="checkmark-check-eklenti"></span>
+              </label>
+              <label for="havale" class="container-check-eklenti" style="background: none;">
+                <p>Havale</p>
+                <input type="checkbox" class="eklenti" id="havale" name="odeme_yont">
+                <span class="checkmark-check-eklenti"></span>
+              </label>
+              <label for="eft" class="container-check-eklenti" style="background: none;">
+                <p>EFT</p>
+                <input type="checkbox" class="eklenti" id="eft" name="odeme_yont">
+                <span class="checkmark-check-eklenti"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-label">
+            <h2 class="content-title">Ek Notlar</h2>
+            <textarea name="ek_notlar" placeholder="Buraya ek notlarınızı yazabilirsiniz."></textarea>
+          </div>
+          <div class="forget-pass forget-register">
+            <label class="container" for="sozlesme">
+              <a href="#">Kullanım Sozlesmesi</a>'ni <strong>okudum ve onaylıyorum.</strong>
+              <input type="checkbox" id="sozlesme" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <center>
+            <button type="submit" class="register-btn">SİPARİŞİ TAMAMLA</button>
+          </center>
+        </form>
       </div>
+    </div>
+  </div>
+
+  <div class="form-info">
+    <div class="container">
+      <img src="images/icons/shieldPurple.png" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nostrum quia et pariatur doloremque, esse dicta
+        repellat ducimus suscipit quaerat dolorum laborum quo neque vitae aliquam impedit amet voluptatum quod.</p>
     </div>
   </div>
 
@@ -489,6 +624,29 @@
     /*if the user clicks anywhere outside the select box,
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
+
+
+
+
+
+
+
+
+    $("input:checkbox").on('click', function () {
+      // in the handler, 'this' refers to the box clicked on
+      var $box = $(this);
+      if ($box.is(":checked")) {
+        // the name of the box is retrieved using the .attr() method
+        // as it is assumed and expected to be immutable
+        var group = "input:checkbox[name='" + $box.attr("name") + "']";
+        // the checked state of the group/box on the other hand will change
+        // and the current value is retrieved using .prop() method
+        $(group).prop("checked", false);
+        $box.prop("checked", true);
+      } else {
+        $box.prop("checked", false);
+      }
+    });
   </script>
 
 </body>

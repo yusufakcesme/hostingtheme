@@ -1380,6 +1380,143 @@
   cursor: pointer;
 }
 
+.giris-uyari {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  top: -50px;
+  left: 5%;
+  margin: 0 auto;
+}
+
+.giris-uyari p {
+  font-size: 1.6rem;
+  color: #2d0452;
+  font-weight: bolder;
+}
+
+.giris-uyari a {
+  width: 200px;
+  height: 45px;
+  border-radius: 45px;
+  background-color: #4b3969;
+  color: #fff;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.page-content form {
+  position: relative;
+}
+
+.page-content .form-label {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-content .form-label .content-summary {
+  text-align: left;
+}
+
+.page-content .form-label .total-price {
+  width: 100%;
+  height: 35px;
+  background-color: #e1dde7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-content .form-label .total-price span {
+  font-family: 'AvenirBlack';
+}
+
+.page-content .form-label .odeme-yontemi-p {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  color: #2d0452;
+}
+
+.page-content .form-label .odeme-yontemleri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-content .form-label .odeme-yontemleri label {
+  width: auto;
+  margin-right: 30px;
+}
+
+.page-content .form-label .odeme-yontemleri label span {
+  border-radius: 0;
+}
+
+.page-content .form-label textarea {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+  border: none;
+  background-color: #f0eef3;
+  padding: 10px;
+  font-family: 'AvenirMedium';
+}
+
+.page-content .forget-pass {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-content .policy-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-info {
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+}
+
+.form-info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-info .container p {
+  font-size: 2rem;
+  color: #2d0452;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1170px) {
   html {
     font-size: 9px;
@@ -1422,6 +1559,63 @@
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 0px;
+  }
+  .giris-uyari {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    top: -20px !important;
+    text-align: center;
+  }
+  .giris-uyari p {
+    padding-bottom: 10px;
+  }
+  form {
+    padding-top: 50px;
+  }
+  .total-price {
+    width: 100%;
+    height: 35px;
+    background-color: #e1dde7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.6rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .total-price span {
+    font-family: 'AvenirBlack';
+  }
+  .form-info {
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+  }
+  .form-info .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-info .container p {
+    font-size: 2rem;
+    color: #2d0452;
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
   }
   /* SEPET ADIM 1 (PAKET SECİM) */
   .sepet {

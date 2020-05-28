@@ -1084,14 +1084,106 @@ $gray: #b2b2b2;
   }
 
 }
+.giris-uyari {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  top: -50px;
+  left: 5%;
+  margin: 0 auto;
+  p {
+    font-size: 1.6rem;
+    color: $purple;
+    font-weight: bolder;
+  }
+  a {
+    width: 200px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: #4b3969;
+    color: #fff;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.page-content {
+form {
+  position: relative;
+}
+  .form-label {
+    margin-left: auto;
+    margin-right: auto;
+    .content-summary {
+      text-align: left;
+    }
+    .total-price {
+      width: 100%;
+      height: 35px;
+      background-color: #e1dde7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-family: 'AvenirBlack';
+      }
+    }
+    .odeme-yontemi-p {
+      font-size: 1.6rem;
+      margin-top: 20px;
+      color: $purple;
+    }
+    .odeme-yontemleri {
+      display: flex;
+      label {
+        width: auto;
+        margin-right: 30px;
+        span {
+          border-radius: 0;
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      resize: vertical;
+      border: none;
+      background-color: #f0eef3;
+      padding: 10px;
+      font-family: 'AvenirMedium';
+    }
+  }
+  .forget-pass {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .policy-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 
-
-
-
-
-
-
+.form-info {
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+  .container {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 2rem;
+      color: $purple;
+      margin-left: 30px;
+      font-weight: bold;
+    }
+  }
+}
 
 
 
@@ -1131,10 +1223,50 @@ $gray: #b2b2b2;
     padding: 0px;
   }
 
+  .giris-uyari {
+    flex-direction: column;
+    height: auto;
+    top: -20px !important;
+    text-align: center;
+    p {
+      padding-bottom: 10px;
+    }
+  }
 
+  form  {
+    padding-top: 50px;
+  }
 
+  .total-price {
+    width: 100%;
+    height: 35px;
+    background-color: #e1dde7;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    justify-content: center;
+    span {
+      font-family: 'AvenirBlack';
+    }
+  }
 
-
+  .form-info {
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      p {
+        font-size: 2rem;
+        color: $purple;
+        margin-top: 20px;
+        margin-left: 0px;
+        text-align: center;
+      }
+    }
+  }
 
 
 /* SEPET ADIM 1 (PAKET SECİM) */
